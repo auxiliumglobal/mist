@@ -376,8 +376,6 @@ class EthereumNode extends EventEmitter {
 
                 const proc = spawn(binPath, [
                     '--sprouts.testnet',
-                    '--bootnodes',
-                    'enode://80993f2f625e2952f58aa6cec9bccf4ff6db29174e6f32b07d2b719a646d41f335d5236584eeceaeae04cee3a1d2d8d38a7f0807da033897d8b19c7b2d5457f8@94.130.216.246:30302',
                     '--syncmode',
                     'full'
                 ]);
