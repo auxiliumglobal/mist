@@ -371,14 +371,15 @@ class EthereumNode extends EventEmitter {
 
                     return reject(err);
                 }
-
-                ethereumNodeLog.trace('Spawn', binPath, args);
-
-                const proc = spawn(binPath, [
+                const args = [
                     '--sprouts.testnet',
                     '--syncmode',
                     'full'
-                ]);
+                ];
+
+                ethereumNodeLog.trace('Spawn', binPath, args);
+
+                const proc = spawn(binPath, args);
 
                 // node has a problem starting
                 proc.once('error', (error) => {
