@@ -162,7 +162,7 @@ class Settings {
             process.platform === 'sunos') {
             ipcPath += '/.sproutsplus/testnet/geth.ipc';
         } else if (process.platform === 'win32') {
-            ipcPath = this.appDataPath + '\\Roaming\\SproutsPlus\\testnet\\geth.ipc';
+            ipcPath = '\\\\.\\pipe\\geth.ipc';
         }
 
         settingsLog.debug(`IPC path: ${ipcPath}`);
