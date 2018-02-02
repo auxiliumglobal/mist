@@ -476,7 +476,7 @@ let menuTempl = function (webviews) {
         }
 
         devToolsMenu.push({
-            label: i18n.t('mist.applicationMenu.develop.ethereumNode'),
+            label: i18n.t('mist.applicationMenu.develop.sproutsNode'),
             submenu: nodeSubmenu,
         });
     }
@@ -541,7 +541,7 @@ let menuTempl = function (webviews) {
     }
 
     // Enables mining menu: only in Solo mode and Ropsten network (testnet)
-    if (ethereumNode.isOwnNode && (ethereumNode.isTestNetwork || ethereumNode.isDevNetwork)) {
+    /*if (ethereumNode.isOwnNode && (ethereumNode.isTestNetwork || ethereumNode.isDevNetwork)) {*/
         devToolsMenu.push({
             label: (global.mining) ? i18n.t('mist.applicationMenu.develop.stopMining') : i18n.t('mist.applicationMenu.develop.startMining'),
             accelerator: 'CommandOrControl+Shift+M',
@@ -554,7 +554,7 @@ let menuTempl = function (webviews) {
                 }
             }
         });
-    }
+    /*}*/
 
     if (global.mode !== 'wallet') {
         devToolsMenu.push({
