@@ -66,10 +66,10 @@ matrix:
 install:
   - echo $PATH
   - PATH=$PATH:$HOME/.meteor && curl -L https://raw.githubusercontent.com/arunoda/travis-ci-meteor-packages/1390e0f96162d0d70fc1e60a6b0f4f891a0e8f42/configure.sh | /bin/sh
+  - npm update
   - export PATH=$PATH:`yarn global bin`
   - yarn global add gulp-cli meteor-build-client
   - yarn
-  - npm update
 
 script:
   # disable macOS code-signing (production certificate) on develop branch
