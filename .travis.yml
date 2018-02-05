@@ -69,7 +69,6 @@ install:
   - export PATH=$PATH:`yarn global bin`
   - yarn global add gulp-cli meteor-build-client
   - yarn
-  - curl https://install.meteor.com/ | sh
 
 script:
   # disable macOS code-signing (production certificate) on develop branch
