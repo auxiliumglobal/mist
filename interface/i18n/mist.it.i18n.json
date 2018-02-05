@@ -119,7 +119,7 @@
             "runningNodeFound": "Trovato nodo Sprouts in esecuzione!",
             "startingNode": "Avvio nodo Sprouts ...",
             "startedNode": "Avvio applicazione...",
-            "nodeConnectionTimeout": "Impossibile avviare un nodo Sprouts!<br><small>Se <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>hai installato Geth</a>, usa questo comando per eseguirlo:<br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> o riporta il problema </a></small>",
+            "nodeConnectionTimeout": "Impossibile avviare un nodo Sprouts!<br><small>Se <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>hai installato Geth</a>, usa questo comando per eseguirlo:<br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> o riporta il problema </a></small>",
             "nodeBinaryNotFound": "Impossibile trovare l'eseguibile del nodo Sprouts !<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Per favore avvialo manualmente prima. </a> </small>",
             "nodeSyncing": "Il nodo Sprouts deve sincronizzarsi, attendere prego...",
             "nodeSyncInfo": "Scaricamento blocco __displayBlock__ di __highestBlock__.",
@@ -203,7 +203,7 @@
             },
             "onboarding": {
                 "description": "Sprouts é una piattaforma decentralizzata per costruire applicazioni sfruttando una blockchain: software a prova di manomissione che puó trasferire valore e proprietá vivendo per sempre",
-                "goToTestnet": "Usa la rete di test (Rinkeby)",
+                "goToTestnet": "Usa la rete di test",
                 "goToTestnetDescription": "Prova la tecnologia liberamente utilizzando una testnet, senza l'utilizzo di vero SPP.",
                 "gotoMainnet": "Usa la rete principale",
                 "gotoMainnetDescription": " Avrai bisogno di un po di SPP per creare ed eseguire contratti. Non ti preoccupare, ti aiuteremo ad ottenerne un pó...",

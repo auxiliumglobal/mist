@@ -138,7 +138,7 @@
             "startingNode": "Sprouts node starten...",
             "stoppingNode": "Sprouts node stoppen...",
             "startedNode": "Applicatie starten...",
-            "nodeConnectionTimeout": "Sprouts node opstarten niet mogelijk!<br><small>Als je <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>Geth geinstalleerd hebt</a>, gebruik dan dit commando om het op te starten: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Of meld een fout </a></small>",
+            "nodeConnectionTimeout": "Sprouts node opstarten niet mogelijk!<br><small>Als je <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>Geth geinstalleerd hebt</a>, gebruik dan dit commando om het op te starten: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> Of meld een fout </a></small>",
             "nodeBinaryNotFound": "Geen Sprouts node gevonden!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Start er a.u.b. handmatig een. </a> </small>",
             "nodeStarting": "Sprouts node opstarten...",
             "nodeStarted": "Sprouts node gestart",
@@ -233,7 +233,7 @@
             },
             "onboarding": {
                 "description": "Sprouts is een decentraal platform voor het bouwen van applicaties op een blockchain: software die immuun is voor fraude en levenslang waarde en eigendom over kan brengen",
-                "goToTestnet": "Gebruik het test netwerk (Rinkeby)",
+                "goToTestnet": "Gebruik het test netwerk",
                 "goToTestnetDescription": "Test de technologie vrij in een testongeving, zonder echte SPP te gebruiken.",
                 "gotoMainnet": "Gebruik hoofdnetwerk",
                 "gotoMainnetDescription": "Je zult een beetje SPP nodig hebben om contracten uit te voeren. Geen zorgen, we helpen je met het verkrijgen...",

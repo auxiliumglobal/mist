@@ -120,7 +120,7 @@
             "startingNode": "Starting Sprouts node...",
             "stoppingNode": "Stopping Sprouts node...",
             "startedNode": "Starting application...",
-            "nodeConnectionTimeout": "Couldn't start Sprouts node!<br><small>If you <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>installed Geth</a>, use this command to run it: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Or report an issue </a></small>",
+            "nodeConnectionTimeout": "Couldn't start Sprouts node!<br><small>If you <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>installed Geth</a>, use this command to run it: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> Or report an issue </a></small>",
             "nodeBinaryNotFound": "No Sprouts node binary found!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Please start one manually before. </a> </small>",
             "nodeStarting": "Sprouts node starting up...",
             "nodeStarted": "Sprouts node started",
@@ -215,7 +215,7 @@
             },
             "onboarding": {
                 "description": "Sprouts is a public blockchain that features a turing complete programming for building solid, decentralized applications.",
-                "goToTestnet": "Use the test network (Rinkeby)",
+                "goToTestnet": "Use the test network",
                 "goToTestnetDescription": "Test the technology freely in a sandboxed testnet, without using real SPP.",
                 "gotoMainnet": "Use the main network",
                 "gotoMainnetDescription": "You’ll need some SPP in order to create and execute contracts. Don't worry, we'll help you get some...",

@@ -119,7 +119,7 @@
             "runningNodeFound": "发现正在运行的以太坊节点！",
             "startingNode": "正在开启以太坊节点……",
             "startedNode": "正在启动应用程序……",
-            "nodeConnectionTimeout": "无法开启以太坊节点！<br><small>如果你已经<a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>安装Geth</a>，使用此命令运行： <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> 或者上报此问题 </a></small>",
+            "nodeConnectionTimeout": "无法开启以太坊节点！<br><small>如果你已经<a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>安装Geth</a>，使用此命令运行： <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> 或者上报此问题 </a></small>",
             "nodeBinaryNotFound": "找不到以太坊节点安装文件！<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> 请事先手动开启一个节点 </a> </small>",
             "nodeSyncing": "需要同步以太坊节点，请等待……",
             "nodeSyncInfo": "正在下载第__displayBlock__块，共__highestBlock__。",
@@ -203,7 +203,7 @@
             },
             "onboarding": {
                 "description": "以太坊是一个用于在区块链上创建应用的去中心化平台：一种用于转移价值和资产，永远存在并且无法被篡改的软件",
-                "goToTestnet": "使用测试网络 (Rinkeby)",
+                "goToTestnet": "使用测试网络",
                 "goToTestnetDescription": "请放心在沙盒测试网络中测试该技术，无需使用真正的以太币。",
                 "gotoMainnet": "使用主网络",
                 "gotoMainnetDescription": "你需要一些以太币来创建和执行合约。别担心，我们将帮你获取一些……",
