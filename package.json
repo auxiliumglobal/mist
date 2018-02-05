@@ -1,11 +1,11 @@
 {
-  "name": "Mist",
-  "version": "0.9.3",
+  "name": "Auxilium",
+  "version": "0.1",
   "license": "GPL-3.0",
-  "author": "Ethereum Mist Team <mist@ethereum.org>",
+  "author": "Auxilium Team <>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ethereum/mist.git"
+    "url": "https://github.com/applicature/sprouts-wallet.git"
   },
   "scripts": {
     "postinstall": "cd interface && yarn",

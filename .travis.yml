@@ -11,7 +11,7 @@ sudo: required
 branches:
   only:
     # - develop
-    # - master
+    - master
     - sprouts-adaptation
 
 matrix:
