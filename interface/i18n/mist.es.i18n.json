@@ -119,7 +119,7 @@
             "runningNodeFound": "Encontrado nodo Sprouts funcionando!",
             "startingNode": "Iniciando el nodo Sprouts...",
             "startedNode": "Iniciando la aplicación...",
-            "nodeConnectionTimeout": "No se pudo iniciar un nodo Sprouts!<br><small>Si <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>has instalado Geth</a>, utiliza este comando para ejecutarlo: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> O informa del problema </a></small>",
+            "nodeConnectionTimeout": "No se pudo iniciar un nodo Sprouts!<br><small>Si <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>has instalado Geth</a>, utiliza este comando para ejecutarlo: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> O informa del problema </a></small>",
             "nodeBinaryNotFound": "No se ha encontrado el binario del nodo Sprouts!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Por favor, inicie antes uno manualmente. </a> </small>",
             "nodeSyncing": "El nodo de Sprouts necesita sincronizarse, por favor espere...",
             "nodeSyncInfo": "Descargando bloque __displayBlock__ de __highestBlock__.",
@@ -203,7 +203,7 @@
             },
             "onboarding": {
                 "description": "Sprouts es una plataforma descentralizada para la construcción de aplicaciones en una blockchain: segura y a prueba de manipulaciones que puede transferir valor, propiedad y vive para siempre",
-                "goToTestnet": "Utiliza la red de pruebas (Rinkeby)",
+                "goToTestnet": "Utiliza la red de pruebas",
                 "goToTestnetDescription": "Pruebe la tecnología libremente en una red de pruebas sin utilizar SPP reales.",
                 "gotoMainnet": "Utilizar la red principal",
                 "gotoMainnetDescription": " Necesitarás algunos SPP para poder crear y ejecutar contratos. No se preocupe, nosotros le ayudaremos a obtener algunos...",

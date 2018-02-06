@@ -120,7 +120,7 @@
             "startingNode": "Starter Sprouts-node...",
             "stoppingNode": "Stopper Sprouts-node...",
             "startedNode": "Starter applikasjonen...",
-            "nodeConnectionTimeout": "Kunne ikke starte Sprouts-node!<br><small>Hvis du <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>installerte Geth</a>, bruk denne kommandoen for å kjøre det: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Eller rapporter et problem </a></small>",
+            "nodeConnectionTimeout": "Kunne ikke starte Sprouts-node!<br><small>Hvis du <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>installerte Geth</a>, bruk denne kommandoen for å kjøre det: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> Eller rapporter et problem </a></small>",
             "nodeBinaryNotFound": "Ingen Sprouts-node kilde funnet!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Vennligst start en manuelt først. </a> </small>",
             "nodeStarting": "Sprouts-node starter opp...",
             "nodeStarted": "Sprouts-node startet",
@@ -203,7 +203,7 @@
             },
             "onboarding": {
                 "description": "Sprouts er en desentralisert plattform for å bygge applikasjoner på en blokkjede: sabotasjesikker programvare som kan overføre verdi og eiendom, og som lever evig",
-                "goToTestnet": "Bruk testnettet (Rinkeby)",
+                "goToTestnet": "Bruk testnettet",
                 "goToTestnetDescription": "Test teknologien fritt i en sandboks (testnett), uten å bruke ekte SPP.",
                 "gotoMainnet": "Bruk hovednettverket",
                 "gotoMainnetDescription": " Du trenger noen SPP for å skape og utføre kontrakter. Ikke bekymre deg, vi vil hjelpe deg å skaffe noen...",

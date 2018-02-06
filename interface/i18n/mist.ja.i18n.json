@@ -119,7 +119,7 @@
             "runningNodeFound": "走っているSprouts nodeを見つけました!",
             "startingNode": "Sprouts ノードを開始しています。",
             "startedNode": "アプリケーションを開始しています...",
-            "nodeConnectionTimeout": "Sprouts nodeをスタート出来ませんでした!<br><small>もし<a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>Geth</a>をインストールしているならば,このコマンドを使ってみてください: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'>もしくは問題を報告して下さい。 </a></small>",
+            "nodeConnectionTimeout": "Sprouts nodeをスタート出来ませんでした!<br><small>もし<a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>Geth</a>をインストールしているならば,このコマンドを使ってみてください: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'>もしくは問題を報告して下さい。 </a></small>",
             "nodeBinaryNotFound": "Sprouts node バイナリーが見つかりませんでした。<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> 手動でスタートして下さい。 </a> </small>",
             "nodeSyncing": "Sprouts node は同期中です...",
             "nodeSyncInfo": "blockをダウンロードしています。 __displayBlock__ of __highestBlock__.",
@@ -203,7 +203,7 @@
             },
             "onboarding": {
                 "description": "Sprouts は分散型のプラットフォームで、ブロックチェーン上でアプリケーションを作成することが出来ます。価値を転送することが出来、永続的に稼働するセキュリティの高いソフトウェアを作ることが出来ます。",
-                "goToTestnet": "テストネットワークを使用する (Rinkeby)",
+                "goToTestnet": "テストネットワークを使用する",
                 "goToTestnetDescription": "サンドボックスのテストネットで、テクノロジーを自由に使う。本当のSPPを使うことなく.",
                 "gotoMainnet": "メインネットワークを使用する",
                 "gotoMainnetDescription": "コントラクトを作成して実行するためにいくらかのSPPが必要となるでしょう。心配することはありません、手に入れるためにこちらの方法があります。...",

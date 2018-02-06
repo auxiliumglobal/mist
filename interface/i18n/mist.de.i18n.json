@@ -119,7 +119,7 @@
             "runningNodeFound": "Laufender Sprouts Softwareknoten gefunden!",
             "startingNode": "Starte Sprouts Softwareknoten...",
             "startedNode": "Starte Anwendung...",
-            "nodeConnectionTimeout": "Sprouts Softwareknoten konnte nicht gestartet werden!<br><small>Wenn du <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>Geth installiert hast,</a>, verwende bitte diesen Befehl, um Geth zu starten: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'>oder sende einen Fehlerreport</a></small>",
+            "nodeConnectionTimeout": "Sprouts Softwareknoten konnte nicht gestartet werden!<br><small>Wenn du <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>Geth installiert hast,</a>, verwende bitte diesen Befehl, um Geth zu starten: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'>oder sende einen Fehlerreport</a></small>",
             "nodeBinaryNotFound": "Keine Programmdatei für den Sprouts Softwareknoten gefunden!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Bitte starte den Sprouts Softwareknoten manuell. </a> </small>",
             "nodeSyncing": "Sprouts Softwareknoten muss synchronisieren, bitte warten...",
             "nodeSyncInfo": "Block __displayBlock__ von __highestBlock__ wird heruntergeladen.",
@@ -201,7 +201,7 @@
             },
             "onboarding": {
                 "description": "Sprouts ist eine dezentrale Plattform, um Anwendungen auf einer Blockchain zu bauen: Fälschungssichere Software, die Werte und Vermögen übertragen kann und für immer besteht",
-                "goToTestnet": "Verwende das Testnetz (Rinkeby)",
+                "goToTestnet": "Verwende das Testnetz",
                 "goToTestnetDescription": "Teste die Technologie frei in der Testnetz-Sandbox, ",
                 "gotoMainnet": "Verwende das Hauptnetz",
                 "gotoMainnetDescription": " Du wirst etwas SPP benötigen, um Verträge anzulegen und auszuführen. Wir werden dir helfen, etwas zu bekommen ...",

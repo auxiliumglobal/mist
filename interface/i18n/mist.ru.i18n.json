@@ -120,7 +120,7 @@
             "startingNode": "Запуск Sprouts-ноды...",
             "stoppingNode": "Остановка Sprouts-ноды...",
             "startedNode": "Запуск приложения...",
-            "nodeConnectionTimeout": "Не удалось запустить Sprouts-ноду!<br><small>Если вы <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>установили Geth</a>, используйте следующую команду для запуска: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Либо сообщите от проблеме </a></small>",
+            "nodeConnectionTimeout": "Не удалось запустить Sprouts-ноду!<br><small>Если вы <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>установили Geth</a>, используйте следующую команду для запуска: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> Либо сообщите от проблеме </a></small>",
             "nodeBinaryNotFound": "Не найдены программные файлы для Sprouts-ноды!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Пожалуйста, для начала изучите руководство. </a> </small>",
             "nodeStarting": "Sprouts-нода запускается...",
             "nodeStarted": "Sprouts-нода запущена",
@@ -205,7 +205,7 @@
             },
             "onboarding": {
                 "description": "Sprouts представляет собой децентрализованную платформу основанную на блокчейне для создания надежных и децентрализованных приложений",
-                "goToTestnet": "Использовать тестовую сеть (Rinkeby)",
+                "goToTestnet": "Использовать тестовую сеть",
                 "goToTestnetDescription": "Свободное тестирование технологии в тестовой сети (sandbox), без использования реального SPP.",
                 "gotoMainnet": "Использовать основную сеть",
                 "gotoMainnetDescription": "Вам потребуется некоторое количество sprouts для того, чтобы создавать и выполнять контракты. Не волнуйтесь, мы вам поможем получить некоторое количество...",

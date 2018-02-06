@@ -120,7 +120,7 @@
             "runningNodeFound": "Node Sprouts encontrado!",
             "startingNode": "Iniciando Node...",
             "startedNode": "Iniciando aplicativo...",
-            "nodeConnectionTimeout": "Não pode inicializar um Node!<br><small> Instale <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>um manualmente</a>, e use esse comando para executa-lo: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Caso não consiga, entre em contato </a></small>",
+            "nodeConnectionTimeout": "Não pode inicializar um Node!<br><small> Instale <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>um manualmente</a>, e use esse comando para executa-lo: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> Caso não consiga, entre em contato </a></small>",
             "nodeBinaryNotFound": "Nó não encontrado!<br><small><a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>Instale um manualmente</a></small>",
             "nodeSyncing": "Sincronizando, favor aguarde...",
             "nodeSyncInfoStates": "Carregando bloco __displayBlock__ de __highestBlock__, <br> Lendo estrutura __displayState__ de __displayKnownStates__",
@@ -204,7 +204,7 @@
             },
             "onboarding": {
                 "description": "Sprouts é uma plataforma decentralizada para construir aplicativos no blockchain: apps a prova de fraude, censura ou corrupção que podem transferir valor e títulos de propriedade",
-                "goToTestnet": "Usar a rede de teste (Rinkeby)",
+                "goToTestnet": "Usar a rede de teste",
                 "goToTestnetDescription": "Experimente a tecnologia usando uma rede de teste sem valores reais.",
                 "gotoMainnet": "Usar a rede Sprouts principal",
                 "gotoMainnetDescription": "Você irá precisar de SPP para executar contratos. Não se preocupe, iremos lhe ajudar com isso",

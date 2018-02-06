@@ -119,7 +119,7 @@
             "runningNodeFound": "Nœud Sprouts actif trouvé !",
             "startingNode": "Démarrage du nœud Sprouts en cours...",
             "startedNode": "Démarrage de l'application...",
-            "nodeConnectionTimeout": "Echec du démarrage du nœud Sprouts !<br><small>Si vous <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>avez installé Geth</a>, utilisez cette commande pour le lancer : <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Ou signalez le problème </a></small>",
+            "nodeConnectionTimeout": "Echec du démarrage du nœud Sprouts !<br><small>Si vous <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>avez installé Geth</a>, utilisez cette commande pour le lancer : <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> Ou signalez le problème </a></small>",
             "nodeBinaryNotFound": "Pas de binaire du nœud Sprouts trouvé !<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Veuillez en lancer d'abord un manuellement. </a> </small>",
             "nodeSyncing": "Le nœud Sprouts se synchronise, veuillez patienter...",
             "nodeSyncInfo": "Télechargement du bloc __displayBlock__ depuis le bloc __highestBlock__.",
@@ -203,7 +203,7 @@
             },
             "onboarding": {
                 "description": "Sprouts est une plateforme décentralisée pour la création d'applications sur une blockchain (chaîne de blocs) : logiciel inviolable qui peut transférer de la valeur et de la propriété et qui vit pour toujours",
-                "goToTestnet": "Utiliser le réseau Testnet (Rinkeby)",
+                "goToTestnet": "Utiliser le réseau Testnet",
                 "goToTestnetDescription": "Testez la technologie librement sur le réseau sandboxé (bac à sable), sans utiliser d'SPP réel.",
                 "gotoMainnet": "Utiliser le réseau réel",
                 "gotoMainnetDescription": "Vous aurez besoin de quelques SPP afin de créer et exécuter des contrats. Ne vous en faites pas, nous allons vous aider à en obtenir...",

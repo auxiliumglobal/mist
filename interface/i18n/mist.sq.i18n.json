@@ -126,7 +126,7 @@
             "runningNodeFound": "U gjet nyje Sprouts në punë!",
             "startingNode": "Duke krijuar nyje Sprouts...",
             "startedNode": "Duke nisur aplikacionin...",
-            "nodeConnectionTimeout": "Nuk mund të niset nyje Sprouts!<br><small>Nëse ju <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>instaluat Geth</a>, përdorni këtë komandë ta krijoni: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> Ose raportoni një problem </a></small>",
+            "nodeConnectionTimeout": "Nuk mund të niset nyje Sprouts!<br><small>Nëse ju <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>instaluat Geth</a>, përdorni këtë komandë ta krijoni: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> Ose raportoni një problem </a></small>",
             "nodeBinaryNotFound": "Nuk u gjet nyje binare Sprouts!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Ju lutemi krijoni një manualisht më parë. </a> </small>",
             "nodeStarting": "Nyja Sprouts po niset...",
             "nodeStarted": "Nyja Sprouts u nis",
@@ -223,7 +223,7 @@
             },
             "onboarding": {
                 "description": "Sprouts është një platformë e decentralizuar për ndërtim aplikacionesh në një zinxhir blloqesh (blockchain) me gjuhën e vet të programimit",
-                "goToTestnet": "Përdor rrjetin testues (Rinkeby)",
+                "goToTestnet": "Përdor rrjetin testues",
                 "goToTestnetDescription": "Testo lirshëm teknologjinë në një rrjet test pa përdorur SPP të vërtetë.",
                 "gotoMainnet": "Përdor rrjetin kryesor",
                 "gotoMainnetDescription": " Ju do të keni nevojë për pak SPP në mënyrë që të krijoni dhe zbatoni kontrata. Mos u shqetësoni, ne do ju ndihmojmë që të gjeni sa duhet...",
