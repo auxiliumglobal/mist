@@ -476,7 +476,7 @@ let menuTempl = function (webviews) {
         }
 
         devToolsMenu.push({
-            label: i18n.t('mist.applicationMenu.develop.sproutsNode'),
+            label: i18n.t('mist.applicationMenu.develop.auxiliumNode'),
             submenu: nodeSubmenu,
         });
     }
