@@ -23,7 +23,7 @@
             "texts": {
                 "note": "메모",
                 "balance": "잔고",
-                "connectionErrorMist": "연결할 수 없습니다. geth를 다음과 같이 실행하세요:<br><br><small><code>__node__</code><br><br>IPC 경로가 디폴트로 되어있는지 확인하세요. 만일 다른 경로를 사용한다면 다음과 같이 실행하세요: <code>datadir</code>, e.g.<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/Ethereum/geth.ipc</code><br>or<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.ethereum/geth.ipc</code>. <br><br>Optional add: <code>--unlock &lt;yourAccount&gt;.</code></small>",
+                "connectionErrorMist": "연결할 수 없습니다. geth를 다음과 같이 실행하세요:<br><br><small><code>__node__</code><br><br>IPC 경로가 디폴트로 되어있는지 확인하세요. 만일 다른 경로를 사용한다면 다음과 같이 실행하세요: <code>datadir</code>, e.g.<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/Auxilium/geth.ipc</code><br>or<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.auxilium/geth.ipc</code>. <br><br>Optional add: <code>--unlock &lt;yourAccount&gt;.</code></small>",
                 "connectionErrorBrowser": "연결할 수 없습니다. geth를 다음의 옵션으로 실행하세요.:<br><br><small><code>__node__</code><br><br>Optional add: <code>--unlock &lt;yourAccount&gt;.</code></small>",
                 "pendingConfirmationsBadge": "승인 대기 중!",
                 "nodeSyncing": "__blockDiff__ 블럭 남음",
@@ -132,7 +132,7 @@
             "amount": "금액",
             "gasPrice": "개스 가격",
             "perMillionGas": " 백만 개스당",
-            "gasUsed": "개스 사용", 
+            "gasUsed": "개스 사용",
             "feePaid": "지급 수수료",
             "data": "송신 데이터",
             "deployedData": "설치한 데이터",
@@ -151,7 +151,7 @@
             },
             "error": {
                 "noDataDeployed": "컨트랙트 주소에 데이터가 설치되지 않았습니다!",
-                "outOfGas": "__from__ 로부터 __to__ 로 가는 트랜잭션이 성공적으로 수행되지 않았습니다."  
+                "outOfGas": "__from__ 로부터 __to__ 로 가는 트랜잭션이 성공적으로 수행되지 않았습니다."
             },
             "types": {
                 "executeContract": "컨트랙트 실행",
@@ -174,7 +174,7 @@
                 },
                 "outgoingTransaction": {
                     "title": "송금액",
-                    "text": " __amount__를 __from__로부터  __to__로 보냄"    
+                    "text": " __amount__를 __from__로부터  __to__로 보냄"
                 },
                 "pendingConfirmation": {
                     "title": "확인 필요",
