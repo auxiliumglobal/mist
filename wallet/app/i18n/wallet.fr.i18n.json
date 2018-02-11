@@ -23,21 +23,21 @@
             "texts": {
                 "note": "Note",
                 "balance": "Solde",
-                "connectionErrorMist": "Impossible de se connecter. Veuillez lancer gexp en utilisant : <br><br><small><code>__node__</code><br><br>Assurez-vous d'avoir bien renseigné le chemin IPC par défaut lorsque vous utilisez un <code>datadir</code> différent, ex : <br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/Ethereum/geth.ipc</code><br>ou<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.Ethereum/geth.ipc</code>. <br><br>Ajout facultatif : <code>--unlock &lt;votreCompte&gt;.</code></small>",
+                "connectionErrorMist": "Impossible de se connecter. Veuillez lancer gexp en utilisant : <br><br><small><code>__node__</code><br><br>Assurez-vous d'avoir bien renseigné le chemin IPC par défaut lorsque vous utilisez un <code>datadir</code> différent, ex : <br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/Auxilium/geth.ipc</code><br>ou<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.auxilium/geth.ipc</code>. <br><br>Ajout facultatif : <code>--unlock &lt;votreCompte&gt;.</code></small>",
                 "connectionErrorBrowser": "Impossible de se connecter. Veuillez lancer gexp en utilisant les options suivantes : <br><br><small><code>__node__</code><br><br>Ajout facultatif : <code>--unlock &lt;votreCompte&gt;.</code></small>",
                 "pendingConfirmationsBadge": "Confirmation en cours !",
                 "nodeSyncing": "__blockDiff__ blocs restants",
                 "blockReceived": "Nouveau bloc reçu",
                 "timeSinceBlock": "depuis le dernier bloc",
                 "peers": "pairs",
-                "testnetExplain": "Vous êtes sur un réseau Testnet, N'ENVOYEZ AUCUN vrai ether à ces adresses",
+                "testnetExplain": "Vous êtes sur un réseau Testnet, N'ENVOYEZ AUCUN vrai AUX à ces adresses",
                 "noAccounts": {
                     "title": "Vous n'avez aucun compte pour l'instant",
                     "text": "Vous devez créer au moins un compte avec un mot de passe robuste."
                 }
             },
             "error": {
-                "wrongChain": "Vous semblez être sur une chaine différente, veuillez redémarrer Ethereum Wallet App !"
+                "wrongChain": "Vous semblez être sur une chaine différente, veuillez redémarrer Auxilium Wallet App !"
             },
             "warnings": {
                 "txOriginVulnerabilityWallet": "Ce portefeuille de contrat à puce a le code obsolète et est soumis à des attaques de phishing. ",
@@ -52,7 +52,7 @@
                 "title": "Sélectionner un compte"
             },
             "testnetWallet": {
-                "walletNeedsDeployment": "Vous semblez être sur un réseau Testnet.<br><br>Aucun code de portefeuille n'a été trouvé, nous devons en déployer un qui pourra être utilisé par un 'wallet contract stub contracts' depuis votre adresse : <br><br><small><code>__account__</code></small><br><br><em>Veuillez vous assurer que cette adresse détienne au moins 1 ether en dépôt !</em>",
+                "walletNeedsDeployment": "Vous semblez être sur un réseau Testnet.<br><br>Aucun code de portefeuille n'a été trouvé, nous devons en déployer un qui pourra être utilisé par un 'wallet contract stub contracts' depuis votre adresse : <br><br><small><code>__account__</code></small><br><br><em>Veuillez vous assurer que cette adresse détienne au moins 1 AUX en dépôt !</em>",
                 "testnetWalletDeployed": "Le portefeuille initial est déployé !<br>Un portefeuille initial a été déployé à cette adresse :<br><br><small><code>__address__</code></small>."
             },
             "addToken": {
@@ -76,19 +76,19 @@
             "defaultName": "Sans nom",
             "creating": "Création",
             "importing": "Importation",
-            "accountNote": "Les comptes ne permettent pas l'affichage des transactions entrantes, mais détiennent et envoient de l'ether. Pour voir les transactions entrantes <a href=\"/account/new\">créez un portefeuille</a> pour stocker de l'ether.",
-            "walletNote": "La plupart des plateformes de change ne permettent pas encore de recevoir de l'ether depuis un portefeuille. Assurez-vous d'abord de transférer vos fonds sur une adresse de compte personnel !",
+            "accountNote": "Les comptes ne permettent pas l'affichage des transactions entrantes, mais détiennent et envoient de l'AUX. Pour voir les transactions entrantes <a href=\"/account/new\">créez un portefeuille</a> pour stocker de l'AUX.",
+            "walletNote": "La plupart des plateformes de change ne permettent pas encore de recevoir de l'AUX depuis un portefeuille. Assurez-vous d'abord de transférer vos fonds sur une adresse de compte personnel !",
             "addressCopiedToClipboard": "Copié dans le presse-papier",
             "qrCodeLabel": "Pointer une app mobile compatible vers ce code",
             "dailyLimit": "Limite quotidienne",
             "dailyLimitRemaining": "restants aujourd'hui",
             "requiredSignatures": "signatures requises",
             "owners": "Propriétaires",
-            "walletsDescription": "Les portefeuilles sont des contrats qui sont stockés sur la blockchain et peuvent détenir et sécuriser de l'ether. Plusieurs comptes peuvent en être propriétaires et ils conservent un registre complet de toutes les transactions.",
-            "walletsDescriptionNotEnoughFunds": "Dès que vous avez plus de 1 ether, vous pouvez créer des contrats plus sophistiqués. Les portefeuilles sont des types de contrats intelligents qui permettent à vos fonds d'être contrôlés par plusieurs comptes et qui ont une option de limite de retrait quotidien permettant d'accroître la sécurité. Pour créer vos propres contrats personnalisés, allez sur l'onglet <em>Contrats </em>.",
-            "accountsDescription": "Les comptes sont des clés protégées par mot de passe qui peuvent détenir de l'ether, sécuriser des jetons basés sur Ethereum, et contrôler des contrats. Les comptes ne peuvent pas afficher les transactions entrantes.",
+            "walletsDescription": "Les portefeuilles sont des contrats qui sont stockés sur la blockchain et peuvent détenir et sécuriser de l'AUX. Plusieurs comptes peuvent en être propriétaires et ils conservent un registre complet de toutes les transactions.",
+            "walletsDescriptionNotEnoughFunds": "Dès que vous avez plus de 1 AUX, vous pouvez créer des contrats plus sophistiqués. Les portefeuilles sont des types de contrats intelligents qui permettent à vos fonds d'être contrôlés par plusieurs comptes et qui ont une option de limite de retrait quotidien permettant d'accroître la sécurité. Pour créer vos propres contrats personnalisés, allez sur l'onglet <em>Contrats </em>.",
+            "accountsDescription": "Les comptes sont des clés protégées par mot de passe qui peuvent détenir de l'AUX, sécuriser des jetons basés sur Ethereum, et contrôler des contrats. Les comptes ne peuvent pas afficher les transactions entrantes.",
             "buttons": {
-                "deposit": "Déposer de l'ether",
+                "deposit": "Déposer de l'AUX",
                 "depositBitcoin": "Déposer via du Bitcoin",
                 "viewOnExplorer": "View on Etherscan",
                 "copyAddress": "Copier l'adresse",
@@ -197,7 +197,7 @@
                     "description": "Un contrat contrôlé par plusieurs comptes.",
                     "text1": "Ceci est un compte joint contrôlé par",
                     "text2": "propriétaires. Vous pouvez envoyer jusqu'à",
-                    "text3": "ether par jour.",
+                    "text3": "AUX par jour.",
                     "text4": "Toute transaction au delà de cette limite quotidienne nécessite la confirmation de",
                     "text5": "propriétaires.",
                     "accountOwnersTitle": "Propriétaires du compte",
@@ -259,7 +259,7 @@
                 "noCodeInRecipient": "Le compte destinataire n'est pas un contrat, vous ne pouvez donc rien exécuter. <strong>Placer une adresse de contrat dans le champ 'À'. </strong>",
                 "addData": "Vous pouvez ajouter des données supplémentaires à joindre à votre transaction. Si vous laissez le champ \"À\" vide, un contrat essayera de se déployer à partir de vos propres données.",
                 "dataNotExecutable": "Les données ne semblent pas être exécutables, cela signifie que la transaction utilisera tout le gaz fourni.",
-                "cantEstimateGas": "Nous ne pouvons pas estimer correctement votre consommation de gaz car vous avez besoin d'au moins 1 ether sur votre compte.",
+                "cantEstimateGas": "Nous ne pouvons pas estimer correctement votre consommation de gaz car vous avez besoin d'au moins 1 AUX sur votre compte.",
                 "estimatedGas": "Gaz nécessaire estimé",
                 "timeTexts": {
                     "0": "en quelques minutes ou plus",

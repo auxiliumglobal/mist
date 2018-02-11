@@ -5,7 +5,7 @@
                 "label": "__app__",
                 "about": "Sobre __app__",
                 "checkForUpdates": "Procurar Atualizações...",
-                "checkForNodeUpdates": "Check for Sprouts node updates...",
+                "checkForNodeUpdates": "Check for Auxilium node updates...",
                 "services": "Serviços",
                 "hide": "Ocultar o __app__",
                 "hideOthers": "Ocultar Outros",
@@ -44,7 +44,7 @@
                 "devToolsWebview": "__webview__",
                 "runTests": "Realizar testes",
                 "logFiles": "Mostrar arquivos de logs",
-                "sproutsNode": "Node",
+                "auxiliumNode": "Node",
                 "network": "Rede",
                 "mainNetwork": "Rede principal",
                 "startMining": "⛏ Iniciar mineração",
@@ -71,7 +71,7 @@
             "nodeStartup": "O node não pode ser iniciado. Você já tem um instalado? Ele está fazendo upgrade do banco de dados?",
             "timeSync": {
                 "title": "Seu computador está fora de sincronia!",
-                "description": "Para sincronizar com a rede Sprouts você precisa que seu computador esteja sincronizado com um servidor de tempo preciso.",
+                "description": "Para sincronizar com a rede Auxilium você precisa que seu computador esteja sincronizado com um servidor de tempo preciso.",
                 "win32": "Vá em ‘Ajustes de tempo’ depois a aba ‘internet’ nas suas preferências de sistema e marque a opção ‘sincronizar com um servidor de tempo’. Veja esse guia para mais detalhes: http://www.guidingtech.com/3119/windows-clock-sync/",
                 "linux": "Para instalar um servidor de tempo, instale \"ntp\" via \"apt-get install ntp\".",
                 "darwin": "Abra suas preferências, escolha \"preferências de tempo\" e marque \"Ajustar o tempo automaticamente\"."
@@ -82,7 +82,7 @@
             },
             "legacyChain": {
                 "title": "Legacy chain detected",
-                "description": "Your node is currently on the unsupported Sprouts chain. To use this chain use tools provided by the sprouts project at\nhttps://ethereumclassic.github.io.\n\nTo revert to the main sprouts chain follow the tutorial here:\nhttps://github.com/ethereum/mist/releases/0.8.2"
+                "description": "Your node is currently on the unsupported Auxilium chain. To use this chain use tools provided by the auxilium project at\nhttps://ethereumclassic.github.io.\n\nTo revert to the main auxilium chain follow the tutorial here:\nhttps://github.com/ethereum/mist/releases/0.8.2"
             }
         },
         "rightClick": {
@@ -95,14 +95,14 @@
             "blockReceived": "Novo bloco recebido",
             "timeSinceBlock": "Tempo corrido desde último bloco",
             "blockNumber": "Número de seu bloco atual",
-            "testnetExplain": "Você está na rede de teste, NÃO ENVIE SPP de verdade para essas contas",
+            "testnetExplain": "Você está na rede de teste, NÃO ENVIE AUX de verdade para essas contas",
             "peers": "nós",
             "checkingWhichNetwork": "Checking network...",
             "mainNetwork": "Main-net",
             "testNetwork": "Test-net",
             "privateNetwork": "Private-net",
-            "mainnetExplain": "You are on the main Sprouts global network",
-            "privatenetExplain": "You are on a private net, DO NOT SEND any real SPP to these addresses",
+            "mainnetExplain": "You are on the main Auxilium global network",
+            "privatenetExplain": "You are on a private net, DO NOT SEND any real AUX to these addresses",
             "unknownnetExplain": "Unable to determine which network you are on"
         },
         "sidebar": {
@@ -117,7 +117,7 @@
             }
         },
         "startScreen": {
-            "runningNodeFound": "Node Sprouts encontrado!",
+            "runningNodeFound": "Node Auxilium encontrado!",
             "startingNode": "Iniciando Node...",
             "startedNode": "Iniciando aplicativo...",
             "nodeConnectionTimeout": "Não pode inicializar um Node!<br><small> Instale <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>um manualmente</a>, e use esse comando para executa-lo: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Applicature/sprouts-wallet/issues' class='button' target='_blank'> Caso não consiga, entre em contato </a></small>",
@@ -128,21 +128,21 @@
             "nodeSyncConnecting": "Procurando outros nós...",
             "peerSearchTimeout": "Não procure nós agora",
             "launchApp": "Iniciar Applicativo",
-            "stoppingNode": "Stopping Sprouts node...",
-            "nodeStarting": "Sprouts node starting up...",
-            "nodeStarted": "Sprouts node started",
-            "nodeConnected": "Sprouts node connected",
-            "nodeStopping": "Sprouts node stopping...",
-            "nodeStopped": "Sprouts node stopped",
-            "nodeError": "Sprouts node connection error :'(",
-            "unableToBindPort": "Sprouts node cannot run. Is another instance already running?",
+            "stoppingNode": "Stopping Auxilium node...",
+            "nodeStarting": "Auxilium node starting up...",
+            "nodeStarted": "Auxilium node started",
+            "nodeConnected": "Auxilium node connected",
+            "nodeStopping": "Auxilium node stopping...",
+            "nodeStopped": "Auxilium node stopped",
+            "nodeError": "Auxilium node connection error :'(",
+            "unableToBindPort": "Auxilium node cannot run. Is another instance already running?",
             "nodeSyncFoundPeers": "Connecting to __peers__ peers...",
             "clientBinaries": {
                 "scanning": "Checking for node update...",
                 "downloading": "Downloading new node...",
                 "loadConfig": "Loading client config...",
                 "filtering": "Filtering client binaries...",
-                "done": "Sprouts node up-to-date...",
+                "done": "Auxilium node up-to-date...",
                 "error": "Error running downloaded binary."
             }
         },
@@ -179,7 +179,7 @@
                 "estimatedFee": "Taxa estimada",
                 "estimatedGasError": "Transação inválida, se executada irá gastar todo o combustível dado.",
                 "gasPrice": "Preço do combustível",
-                "perMillionGas": "SPP por milhão de combustível",
+                "perMillionGas": "AUX por milhão de combustível",
                 "gasLimit": "Providenciar taxa máxima",
                 "data": "Dados",
                 "buttons": {
@@ -189,7 +189,7 @@
                     "connectionTimeout": "Não pode se conectar com Node, é possível que tenha sido interrompido pelo sistema",
                     "wrongPassword": "Senha errada",
                     "multipleKeysMatchAddress": "Multiple keys match address, please remove duplicates from keystore (menu -> accounts -> backup -> accounts)",
-                    "insufficientFundsForGas": "Insufficient funds in main account (SPP) to pay for gas",
+                    "insufficientFundsForGas": "Insufficient funds in main account (AUX) to pay for gas",
                     "sameAccount": "Can't send to itself"
                 },
                 "transactionThrow": "The contract won't allow this transaction to be executed",
@@ -203,13 +203,13 @@
                 "notEnoughGas": "Gas might not be enough to successfully finish this transaction.<br>Click here to increase the gas amount."
             },
             "onboarding": {
-                "description": "Sprouts é uma plataforma decentralizada para construir aplicativos no blockchain: apps a prova de fraude, censura ou corrupção que podem transferir valor e títulos de propriedade",
+                "description": "Auxilium é uma plataforma decentralizada para construir aplicativos no blockchain: apps a prova de fraude, censura ou corrupção que podem transferir valor e títulos de propriedade",
                 "goToTestnet": "Usar a rede de teste",
                 "goToTestnetDescription": "Experimente a tecnologia usando uma rede de teste sem valores reais.",
-                "gotoMainnet": "Usar a rede Sprouts principal",
-                "gotoMainnetDescription": "Você irá precisar de SPP para executar contratos. Não se preocupe, iremos lhe ajudar com isso",
+                "gotoMainnet": "Usar a rede Auxilium principal",
+                "gotoMainnetDescription": "Você irá precisar de AUX para executar contratos. Não se preocupe, iremos lhe ajudar com isso",
                 "doYouHaveAWalletFile": "Você tem um arquivo de conta?",
-                "walletFileDescription": "<p>Se você participou da pré-venda de sprouts em 2014, você deve ter um arquivo chamado  <code>ethereum_wallet_backup.json</code>. Além de fazer o download, esse arquivo também foi enviado para o seu email na época</p>",
+                "walletFileDescription": "<p>Se você participou da pré-venda de auxilium em 2014, você deve ter um arquivo chamado  <code>ethereum_wallet_backup.json</code>. Além de fazer o download, esse arquivo também foi enviado para o seu email na época</p>",
                 "dropFilesHere": "Largar arquivo de pré-venda",
                 "creating": "Criando...",
                 "importing": "Importando...",
@@ -219,11 +219,11 @@
                 "protectDescription": "Crie uma senha para sua conta nova. Escolha uma senha forte como se fosse guardar a porta da sua casa",
                 "accountTitle": "Adicione crédito",
                 "accountTitleTestnet": "Faça mineração",
-                "sproutsDescription": "A rede Sprouts usa sprouts como uma unidade de troca entre criadores e processadores de contratos. Você não precisa obter uma quantidade muito grande de sprouts para poder realizar funções na rede.",
-                "loadItDescription": "Se você já tem Bitcoin ou outra criptomoeda, a forma mais simples de convertê-la é usando ShapeShift. <br><br> Recomendamos carregar algo como  <strong>0.25 a 1 SPP</strong>.",
-                "mineItDescription": "<strong>Na rede de teste é possível minerar sprouts escolhendo o menu <em>Desenvolvimento</em> e depois <em>Iniciar mineração</em>. </strong> <br> <strong> NÃO ENVIE SPROUTS DE VERDADE PARA ESSE ENDEREÇO </strong>",
+                "auxiliumDescription": "A rede Auxilium usa auxilium como uma unidade de troca entre criadores e processadores de contratos. Você não precisa obter uma quantidade muito grande de auxilium para poder realizar funções na rede.",
+                "loadItDescription": "Se você já tem Bitcoin ou outra criptomoeda, a forma mais simples de convertê-la é usando ShapeShift. <br><br> Recomendamos carregar algo como  <strong>0.25 a 1 AUX</strong>.",
+                "mineItDescription": "<strong>Na rede de teste é possível minerar auxilium escolhendo o menu <em>Desenvolvimento</em> e depois <em>Iniciar mineração</em>. </strong> <br> <strong> NÃO ENVIE AUXILIUM DE VERDADE PARA ESSE ENDEREÇO </strong>",
                 "you": "VOCÊ",
-                "sproutsbase": "Conta principal (SPP)",
+                "auxiliumbase": "Conta principal (AUX)",
                 "depositBitcoin": "Depositar Bitcoin",
                 "learnIt": "Leia enquanto você aguarda",
                 "downloadingBlocks": "Baixando blocos",

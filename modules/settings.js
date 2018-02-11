@@ -88,7 +88,7 @@ class Settings {
     }
 
     get appName() {
-        return this.uiMode === 'mist' ? 'Mist' : 'Ethereum Wallet';
+        return this.uiMode === 'mist' ? 'Mist' : 'Auxilium Wallet';
     }
 
     get appLicense() {
@@ -156,11 +156,11 @@ class Settings {
         ipcPath = this.userHomePath;
 
         if (process.platform === 'darwin') {
-            ipcPath += '/Library/SproutsPlus/testnet/geth.ipc';
+            ipcPath += '/Library/Auxilium/testnet/geth.ipc';
         } else if (process.platform === 'freebsd' ||
             process.platform === 'linux' ||
             process.platform === 'sunos') {
-            ipcPath += '/.sproutsplus/testnet/geth.ipc';
+            ipcPath += '/.auxilium/testnet/geth.ipc';
         } else if (process.platform === 'win32') {
             ipcPath = '\\\\.\\pipe\\geth.ipc';
         }

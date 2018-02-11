@@ -23,21 +23,21 @@
             "texts": {
                 "note": "ノート",
                 "balance": "残高",
-                "connectionErrorMist": "接続不可。 geth を使用して下さい。:<br><br><small><code>__node__</code><br><br>IPC pathがデフォルトのものかを確認して下さい、違うものを使用している場合は <code>datadir</code>, e.g.<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/Ethereum/geth.ipc</code><br>or<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.ethereum/geth.ipc</code>. <br><br>Optional add: <code>--unlock &lt;yourAccount&gt;.</code></small>",
+                "connectionErrorMist": "接続不可。 geth を使用して下さい。:<br><br><small><code>__node__</code><br><br>IPC pathがデフォルトのものかを確認して下さい、違うものを使用している場合は <code>datadir</code>, e.g.<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/Auxilium/geth.ipc</code><br>or<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.auxilium/geth.ipc</code>. <br><br>Optional add: <code>--unlock &lt;yourAccount&gt;.</code></small>",
                 "connectionErrorBrowser": "接続不可。以下のオプションから geth を開始して下さい:<br><br><small><code>__node__</code><br><br>Optional add: <code>--unlock &lt;yourAccount&gt;.</code></small>",
                 "pendingConfirmationsBadge": "確認中!",
                 "nodeSyncing": "__blockDiff__ blocks left",
                 "blockReceived": "新ブロック受信",
                 "timeSinceBlock": "最後のブロックを受信してから",
                 "peers": "ピアーズ",
-                "testnetExplain": "これはテストネットです。これらのアドレスにetherを絶対に送らないでください。",
+                "testnetExplain": "これはテストネットです。これらのアドレスにAUXを絶対に送らないでください。",
                 "noAccounts": {
                     "title": "アカウント未登録",
                     "text": "パスワード付きのアカウントを作成してください。"
                 }
             },
             "error": {
-                "wrongChain": "間違ったチェーン上にいます。Ethereum Wallet App を再起動して下さい。"
+                "wrongChain": "間違ったチェーン上にいます。Auxilium Wallet App を再起動して下さい。"
             },
             "warnings": {
                 "txOriginVulnerabilityWallet": "このスマート契約財布は、古いコードを持っており、フィッシング攻撃の対象となります。",
@@ -52,7 +52,7 @@
                 "title": "アカウントを選択"
             },
             "testnetWallet": {
-                "walletNeedsDeployment": "テストネット上にいます。<br><br>オリジナルウォレットの契約コードが見つかりません、ウォレットコントラクトのスタブコントラクトが使用可能なものをあなたのアドレスから作らなければなりません。: <br><br><small><code>__account__</code></small><br><br><em>最低でも1ether以上アドレスに入っていなければなりません！</em>",
+                "walletNeedsDeployment": "テストネット上にいます。<br><br>オリジナルウォレットの契約コードが見つかりません、ウォレットコントラクトのスタブコントラクトが使用可能なものをあなたのアドレスから作らなければなりません。: <br><br><small><code>__account__</code></small><br><br><em>最低でも1AUX以上アドレスに入っていなければなりません！</em>",
                 "testnetWalletDeployed": "オリジナルのウォレットコントラクトが配置されました！<br>オリジナルのウォレットコントラクトがアドレス上に配置されました。:<br><br><small><code>__address__</code></small>."
             },
             "addToken": {
@@ -76,19 +76,19 @@
             "defaultName": "無名",
             "creating": "作成中",
             "importing": "インポート中",
-            "accountNote": "アカウントは預入のトランザクションの表示を出来ませんが、etherを送って下さい。預入のトランザクションを見るには <a href=\"/account/new\">ウォレットコントラクトを作って下さい</a> etherを入れるために。",
-            "walletNote": "ほとんどの取引はetherをコントラクトウォレットから受け取ることにまだ対応していません。必ず先にアカウントアドレスにお金を移行して下さい！",
+            "accountNote": "アカウントは預入のトランザクションの表示を出来ませんが、AUXを送って下さい。預入のトランザクションを見るには <a href=\"/account/new\">ウォレットコントラクトを作って下さい</a> AUXを入れるために。",
+            "walletNote": "ほとんどの取引はAUXをコントラクトウォレットから受け取ることにまだ対応していません。必ず先にアカウントアドレスにお金を移行して下さい！",
             "addressCopiedToClipboard": "クリップボードにコピーされました",
             "qrCodeLabel": "互換性のあるアプリでQRコードを読み取って下さい",
             "dailyLimit": "１日の制限金額",
             "dailyLimitRemaining": "残高",
             "requiredSignatures": "サインをして下さい",
             "owners": "持ち主",
-            "walletsDescription": "これらの契約はブロックチェーン上に保管され、etherを安全に保管できます。オーナーとしてマルチプルアカウントを保有することができ、全てのトランザクションのログを見ることができます。",
-            "walletsDescriptionNotEnoughFunds": "１ether以上保有しているとより高度な契約ができる様になります。Once you have more than 1 ether you can create a more sophisticated contracts. ウォレットはベーシックなスマートコントラクトの一種で、資金をマルチプルアカウントで管理し、セキュリティー増強のためにオプションで１日当たりの引き出し制限することもできます。 カスタムコントラクトを作るには <em> コントラクト </em> タブ",
-            "accountsDescription": "アカウントはetherを保有できる、パスワードで保護されたキーです、イーサリアムベースのトークンかコインを保全しコントラクトを管理します。アカウントは入ってくる取引を表示できません。",
+            "walletsDescription": "これらの契約はブロックチェーン上に保管され、AUXを安全に保管できます。オーナーとしてマルチプルアカウントを保有することができ、全てのトランザクションのログを見ることができます。",
+            "walletsDescriptionNotEnoughFunds": "１AUX以上保有しているとより高度な契約ができる様になります。Once you have more than 1 AUX you can create a more sophisticated contracts. ウォレットはベーシックなスマートコントラクトの一種で、資金をマルチプルアカウントで管理し、セキュリティー増強のためにオプションで１日当たりの引き出し制限することもできます。 カスタムコントラクトを作るには <em> コントラクト </em> タブ",
+            "accountsDescription": "アカウントはAUXを保有できる、パスワードで保護されたキーです、イーサリアムベースのトークンかコインを保全しコントラクトを管理します。アカウントは入ってくる取引を表示できません。",
             "buttons": {
-                "deposit": "Etherをデポジット",
+                "deposit": "AUXをデポジット",
                 "depositBitcoin": "Bitcoinを使ってデポジット",
                 "viewOnExplorer": "View on Etherscan",
                 "copyAddress": "アドレスをコピー",
@@ -127,7 +127,7 @@
             "amount": "量",
             "gasPrice": "ガスの値段",
             "perMillionGas": " PER MILLION GAS",
-            "gasUsed": "ガス使用量", 
+            "gasUsed": "ガス使用量",
             "feePaid": "支払い金額",
             "data": "データ送信",
             "deployedData": "配備されたデータ",
@@ -146,7 +146,7 @@
             },
             "error": {
                 "noDataDeployed": "アドレス内にデータがありません。",
-                "outOfGas": "トランザクションfrom __from__ to __to__ 正常に実行できませんでした"  
+                "outOfGas": "トランザクションfrom __from__ to __to__ 正常に実行できませんでした"
             },
             "types": {
                 "executeContract": "コントラクト実行",
@@ -169,7 +169,7 @@
                 },
                 "outgoingTransaction": {
                     "title": "支払い送信",
-                    "text": "You send __amount__ from __from__ to __to__."    
+                    "text": "You send __amount__ from __from__ to __to__."
                 },
                 "pendingConfirmation": {
                     "title": "確認して下さい",
@@ -197,7 +197,7 @@
                     "description": "マルチプルアカウントによって管理されたコントラクト",
                     "text1": "これは接続アカウントです、管理しているのは",
                     "text2": "オーナーです。送信の上限は",
-                    "text3": "ether／１日",
+                    "text3": "AUX ／１日",
                     "text4": "１日の上限を超えるトランザクションは承認が必要です",
                     "text5": "オーナーの",
                     "accountOwnersTitle": "アカウントオーナー",
@@ -259,7 +259,7 @@
                 "noCodeInRecipient": "受領者アカウントはコントラクトではありません、何も実行することはできません。 <strong> コントラクトアドレスを'TO' に入れてください。 </strong>",
                 "addData": "トランザクションにデータを付与することができます。もし\"to\" の項目を空欄にするとデータを元にコントラクトを配置しようとします。",
                 "dataNotExecutable": "実行可能なデータではないようです、 that means this transaction will use all the gas you provide.",
-                "cantEstimateGas": "We can't estimate your gas usage properly, as you need at least 1 ether in your account.",
+                "cantEstimateGas": "We can't estimate your gas usage properly, as you need at least 1 AUX in your account.",
                 "estimatedGas": "必要とされるガスの推定",
                 "timeTexts": {
                     "0": "数分以内かそれ以上",

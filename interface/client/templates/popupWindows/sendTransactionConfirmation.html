@@ -27,7 +27,7 @@
                     </div>
                     <div class="connection">
                         <div class="amount">
-                            {{{totalAmount}}} <span class="unit">ETHER</span>
+                            {{{totalAmount}}} <span class="unit">AUX</span>
                         </div>
                         {{#if TemplateVar.get "executionFunction" }}
                             <div class='function-signature {{#if TemplateVar.get "hasSignature"}} has-signature {{/if}} '>
@@ -55,7 +55,7 @@
                 </div>
 
                 {{#if transactionInvalid}}
-                    <p class="info dapp-error"> 
+                    <p class="info dapp-error">
                     {{i18n "mist.popupWindows.sendTransactionConfirmation.estimatedGasError"}}
                     </p>
                 {{else}}

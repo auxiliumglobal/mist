@@ -23,7 +23,7 @@
             "texts": {
                 "note": "Nota",
                 "balance": "Balanç",
-                "connectionErrorMist": "No s'ha pogut connectar. Si us plau inicia geth utilitzant:<br><br><small><code>__node__</code><br><br>Assegura't que la ruta al teu IPC és per defecte, quan utilitzis un <code>datadir</code> diferent, ex.<br><code>geth --datadir ... --ipcpath /Users/&lt;elTeuUsuari&gt;/Library/Ethereum/geth.ipc</code><br>o<br><code>geth --datadir ... --ipcpath /Users/&lt;elTeuUsuari&gt;/.ethereum/geth.ipc</code>. <br><br>Afegeix opcionalment: <code>--unlock &lt;elTeuCompte&gt;.</code></small>",
+                "connectionErrorMist": "No s'ha pogut connectar. Si us plau inicia geth utilitzant:<br><br><small><code>__node__</code><br><br>Assegura't que la ruta al teu IPC és per defecte, quan utilitzis un <code>datadir</code> diferent, ex.<br><code>geth --datadir ... --ipcpath /Users/&lt;elTeuUsuari&gt;/Library/Auxilium/geth.ipc</code><br>o<br><code>geth --datadir ... --ipcpath /Users/&lt;elTeuUsuari&gt;/.auxilium/geth.ipc</code>. <br><br>Afegeix opcionalment: <code>--unlock &lt;elTeuCompte&gt;.</code></small>",
                 "connectionErrorBrowser": "No s'ha pogut connectar. Si us plau inicia geth amb les següents opcions:<br><br><small><code>__node__</code><br><br>Opcionalment afegeix: <code>--unlock &lt;elTeuCompte&gt;.</code></small>",
                 "pendingConfirmationsBadge": "Confirmació Pendent!",
                 "nodeSyncing": "__blockDiff__ blocs restants",
@@ -31,14 +31,14 @@
                 "timeSinceBlock": "des de l'últim bloc",
                 "peers": "peers",
                 "waitingForBlocks": "Esperant blocs..",
-                "testnetExplain": "Ets a la testnet. NO ENVIÏS cap Ether real a aquestes adreces",
+                "testnetExplain": "Ets a la testnet. NO ENVIÏS cap AUX real a aquestes adreces",
                 "noAccounts": {
                     "title": "Encara no tens cap compte",
                     "text": "Necessites crear com a mínim un compte amb una contrasenya segura."
                 }
             },
             "error": {
-                "wrongChain": "Sembla que estàs en una cadena diferent. Si us plau reinicia l'aplicació Ethereum!"
+                "wrongChain": "Sembla que estàs en una cadena diferent. Si us plau reinicia l'aplicació AUX!"
             },
             "warnings": {
                 "txOriginVulnerabilityWallet": "Aquest smart contract conté codi obsolet que pot ser subjecte a atacs de phishing. ",
@@ -55,7 +55,7 @@
                 "title": "Selecciona un compte"
             },
             "testnetWallet": {
-                "walletNeedsDeployment": "Sembla que estàs a la testnet.<br><br>No s'ha trobat cap wallet de contracte original.  Necessitem desplegar-ne un, que pot ser utilitzat com a contracte 'stub', des de la teva adreça: <br><br><small><code>__account__</code></small><br><br><em>Si us plau assegurat que aquesta adreça té al menys 1 Ether!</em>",
+                "walletNeedsDeployment": "Sembla que estàs a la testnet.<br><br>No s'ha trobat cap wallet de contracte original.  Necessitem desplegar-ne un, que pot ser utilitzat com a contracte 'stub', des de la teva adreça: <br><br><small><code>__account__</code></small><br><br><em>Si us plau assegurat que aquesta adreça té al menys 1 AUX!</em>",
                 "testnetWalletDeployed": "S'ha desplegat el wallet de contracte original!<br>Un wallet de contracte original s'ha desplegat a l'adreça:<br><br><small><code>__address__</code></small>."
             },
             "addToken": {
@@ -79,9 +79,9 @@
             "defaultName": "Sense nom",
             "creating": "Creant",
             "importing": "Important",
-            "accountNote": "Els comptes no poden mostrar transaccions entrant, però poden rebre, mantenir i enviar Ether. Per veure les transaccions entrant <a href=\"/account/new\">crea un wallet de contracte</a> per poder desar Ether.",
+            "accountNote": "Els comptes no poden mostrar transaccions entrant, però poden rebre, mantenir i enviar AUX. Per veure les transaccions entrant <a href=\"/account/new\">crea un wallet de contracte</a> per poder desar AUX.",
             "outOfSyncNote": "Si el teu balanç no sembla actualitzat, assegura't que estàs sincronitzat amb la xarxa.",
-            "walletNote": "La majoria dels intercanvis no suporten rebre Ether d'un wallet de contracte encara. Assegura't que mous el teu balanç a un compte primer!",
+            "walletNote": "La majoria dels intercanvis no suporten rebre AUX d'un wallet de contracte encara. Assegura't que mous el teu balanç a un compte primer!",
             "addressCopiedToClipboard": "Copiat al portapapers",
             "addressNotCopiedToClipboard": "Error copiant l'adreça al portapapers. Si us plau torna-ho a intentar.",
             "qrCodeLabel": "Escaneja aquest codi amb una app mòbil compatible",
@@ -89,11 +89,11 @@
             "dailyLimitRemaining": "restant avui",
             "requiredSignatures": "Signatures necessàries",
             "owners": "Propietaris",
-            "walletsDescription": "Aquests contractes s'allotgen a la blockchain i mantenen i asseguren Ether. Poden tenir diversos comptes com a propietaris i mantenir un registre complet de totes les transaccions.",
-            "walletsDescriptionNotEnoughFunds": "Una vegada que tingueu més d'1 Ether, podeu crear contractes més sofisticats. Els Wallets són contractes intel·ligents que permeten controlar els vostres fons mitjançant diversos comptes. Poden tenir un límit diari opcional sobre retirades per augmentar la seguretat. Creeu els vostres propis contractes personalitzats a la pestanya <em>Contractes</em>.",
-            "accountsDescription": "Els comptes estan protegits per contrasenyes i poden contenir Ether i tokens basats en Ethereum.  Poden controlar contractes, però no poden mostrar transaccions entrants.",
+            "walletsDescription": "Aquests contractes s'allotgen a la blockchain i mantenen i asseguren AUX. Poden tenir diversos comptes com a propietaris i mantenir un registre complet de totes les transaccions.",
+            "walletsDescriptionNotEnoughFunds": "Una vegada que tingueu més d'1 AUX, podeu crear contractes més sofisticats. Els Wallets són contractes intel·ligents que permeten controlar els vostres fons mitjançant diversos comptes. Poden tenir un límit diari opcional sobre retirades per augmentar la seguretat. Creeu els vostres propis contractes personalitzats a la pestanya <em>Contractes</em>.",
+            "accountsDescription": "Els comptes estan protegits per contrasenyes i poden contenir AUX i tokens basats en Ethereum.  Poden controlar contractes, però no poden mostrar transaccions entrants.",
             "buttons": {
-                "deposit": "Transfereix Ether & Tokens",
+                "deposit": "Transfereix AUX & Tokens",
                 "depositBitcoin": "Finança amb Bitcoin",
                 "depositUsingCreditCard": "Finança amb targeta de crèdit (només U.S.)",
                 "viewOnExplorer": "Veure a Etherscan",
@@ -136,7 +136,7 @@
             "amount": "Quantitat",
             "gasPrice": "Preu del gas",
             "perMillionGas": " PER MILLIÓ DE GAS",
-            "gasUsed": "Gas utilitzat", 
+            "gasUsed": "Gas utilitzat",
             "feePaid": "Comissió pagada",
             "data": "Dades enviades",
             "deployedData": "Dades desplegades",
@@ -155,7 +155,7 @@
             },
             "error": {
                 "noDataDeployed": "No hi ha dades desplegades a l'adreça del contracte!",
-                "outOfGas": "No s'han pogut executar transaccions de la __from__ a la __to__."  
+                "outOfGas": "No s'han pogut executar transaccions de la __from__ a la __to__."
             },
             "types": {
                 "executeContract": "Executar contracte",
@@ -178,7 +178,7 @@
                 },
                 "outgoingTransaction": {
                     "title": "Pagament enviat",
-                    "text": "Has enviat __amount__ de __from__ a __to__."    
+                    "text": "Has enviat __amount__ de __from__ a __to__."
                 },
                 "pendingConfirmation": {
                     "title": "Confirmació necessària",
@@ -206,7 +206,7 @@
                     "description": "Un contracte controlat per múltiples comptes",
                     "text1": "Això és un compte conjunt controlat per",
                     "text2": "propietaris. Pots enviar fins a",
-                    "text3": "Ether per dia.",
+                    "text3": "AUX per dia.",
                     "text4": "Qualsevol transacció per sobre d'aquest límit diari necessita la confirmació de",
                     "text5": "propietaris.",
                     "accountOwnersTitle": "Propietaris del compte",
@@ -271,7 +271,7 @@
                 "noCodeInRecipient": "El compte destinatari no és un contracte, no pots executar res. <strong> Escriure una adreça d'un contracte al camp 'A'. </strong>",
                 "addData": "Pots afegir dades extres per enviar amb les teves transaccions. Si no saps que és això, <strong>no ho toquis o poden passar coses dolentes</strong>.",
                 "dataNotExecutable": "Les dades semblen no executables, això vol dir que la transacció utilitzarà tot el gas que proporciones.",
-                "cantEstimateGas": "No podem preveure degudament l'ús de gas, necessites com a mínim 1 Ether al teu compte.",
+                "cantEstimateGas": "No podem preveure degudament l'ús de gas, necessites com a mínim 1 AUX al teu compte.",
                 "estimatedGas": "Gas previst requerit",
                 "timeTexts": {
                     "0": "en pocs minuts o més",

@@ -23,21 +23,21 @@
             "texts": {
                 "note": "Notiz",
                 "balance": "Kontostand",
-                "connectionErrorMist": "Verbindung konnte nicht hergestellt werden. Bitte starten Sie Geth mit folgendem Kommando:<br><br><small><code>__node__</code><br><br>Stellen Sie sicher, dass Sie Ihren IPC Pfad zum einen Standardpfad festgelegt haben, wenn Sie einen anderen <code>datadir</code> verwenden, z.B. <br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/Ethereum/geth.ipc</code><br>oder<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.ethereum/geth.ipc</code>. <br><br>Alternative Option: <code>--unlock &lt;yourAccount&gt;.</code></small>",
+                "connectionErrorMist": "Verbindung konnte nicht hergestellt werden. Bitte starten Sie Geth mit folgendem Kommando:<br><br><small><code>__node__</code><br><br>Stellen Sie sicher, dass Sie Ihren IPC Pfad zum einen Standardpfad festgelegt haben, wenn Sie einen anderen <code>datadir</code> verwenden, z.B. <br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/Library/Auxilium/geth.ipc</code><br>oder<br><code>geth --datadir ... --ipcpath /Users/&lt;yourUser&gt;/.auxilium/geth.ipc</code>. <br><br>Alternative Option: <code>--unlock &lt;yourAccount&gt;.</code></small>",
                 "connectionErrorBrowser": "Verbindung konnte nicht hergestellt werden. Bitte starten Sie Geth mit den folgenden Optionen:<br><br><small><code>__node__</code><br><br>Alternative Optionen: <code>--unlock &lt;yourAccount&gt;.</code></small>",
                 "pendingConfirmationsBadge": "Ausstehende Bestätigung!",
                 "nodeSyncing": "__blockDiff__ ausstehende Blöcke",
                 "blockReceived": "Neuen Block empfangen",
                 "timeSinceBlock": "seit dem letzten Block",
                 "peers": "Peers",
-                "testnetExplain": "Sie sind mit dem Testnetz verbunden, SENDEN SIE KEINE echten Ether an diese Adressen",
+                "testnetExplain": "Sie sind mit dem Testnetz verbunden, SENDEN SIE KEINE echten AUX an diese Adressen",
                 "noAccounts": {
                     "title": "Sie haben noch keine Konten",
                     "text": "Sie müssen mindestens ein Konto mit einem starken Passwort erstellen."
                 }
             },
             "error": {
-                "wrongChain": "Sie folgen nicht der Hauptblockchain, bitte starten Sie die Ethereum Wallet App neu!"
+                "wrongChain": "Sie folgen nicht der Hauptblockchain, bitte starten Sie die Auxilium Wallet App neu!"
             },
             "warnings": {
                 "txOriginVulnerabilityWallet": "Diese intelligente Vertrag Geldbörse hat veraltete Code und unterliegt Phishing-Attacken. ",
@@ -45,7 +45,7 @@
                 "txOriginVulnerabilityAccount": "Dieses Konto ist ein Besitzer eines gefährdeten wallet Vertrag und mit diesem Konto auf böswillige Verträge können Ihre Mappen Mittel gefährden. Rüsten Sie Ihren Geldbeutel, bevor Sie Geschäfte mit diesem Konto zu tun.",
                 "txOriginVulnerabilityPopup": "Wir fanden verwundbar Portemonnaies! Achten Sie darauf, neue Geldbörsen zu implementieren und die Mittel zu bewegen!",
                 "checkThisNow": "Zeigen Sie verwundbar",
-                "checkThisLater": "Später",                
+                "checkThisLater": "Später",
                 "learnMore": "Erfahren Sie mehr zu dieser Sicherheitsanfälligkeit"
             }
         },
@@ -54,7 +54,7 @@
                 "title": "Wählen Sie ein Konto"
             },
             "testnetWallet": {
-                "walletNeedsDeployment": "Sie sind mit dem Testnetz verbunden.<br><br>Es wurde kein Wallet-Vertrag gefunden. Daher muss ein neuer Vertrag mit Ihrer Adresse:<br><br><small><code>__account__</code></small><br><br><em>erzeugt werden. Bitte stellen Sie sicher, dass diese Adresse über einen Kontostand von mindestens 1 Ether verfügt!</em>",
+                "walletNeedsDeployment": "Sie sind mit dem Testnetz verbunden.<br><br>Es wurde kein Wallet-Vertrag gefunden. Daher muss ein neuer Vertrag mit Ihrer Adresse:<br><br><small><code>__account__</code></small><br><br><em>erzeugt werden. Bitte stellen Sie sicher, dass diese Adresse über einen Kontostand von mindestens 1 AUX verfügt!</em>",
                 "testnetWalletDeployed": "Der Original-Wallet-Vertrag wurde auf Ihrer Adresse:<br><br><small><code>__address__</code></small> erzeugt."
             },
             "addToken": {
@@ -78,21 +78,21 @@
             "defaultName": "Unbenannt",
             "creating": "Erstellen",
             "importing": "Importieren",
-            "accountNote": "Konten können keine eingehende Transaktionen anzeigen. Trotzdem können Sie mit Konten Ether empfangen und versenden. Um eingehende Transaktionen zu sehen, <a href=\"/account/new\">erstellen Sie einen Wallet-Vertrag</a>.",
+            "accountNote": "Konten können keine eingehende Transaktionen anzeigen. Trotzdem können Sie mit Konten AUX empfangen und versenden. Um eingehende Transaktionen zu sehen, <a href=\"/account/new\">erstellen Sie einen Wallet-Vertrag</a>.",
             "outOfSyncNote": "Wenn dein Kontostand nicht korrekt erscheint, überprüfe ob dein Netzwerk sychronisiert ist.",
-            "walletNote": "Die meisten Börsen akzeptieren bisher keine Transaktionen von einem Wallet-Vertrag. Transferieren Sie daher Ether zunächst auf ein Konto, um es von dort weiter an eine Börse zu überweisen!",
+            "walletNote": "Die meisten Börsen akzeptieren bisher keine Transaktionen von einem Wallet-Vertrag. Transferieren Sie daher AUX zunächst auf ein Konto, um es von dort weiter an eine Börse zu überweisen!",
             "addressCopiedToClipboard": "In die Zwischenablage kopiert",
             "qrCodeLabel": "Scannen Sie diesen Code mit einer kompatiblen Smartphone App",
             "dailyLimit": "Tägliches Limit",
             "dailyLimitRemaining": "Heute verbleibend",
             "requiredSignatures": "Erforderliche Signaturen",
             "owners": "Eigentümer",
-            "walletsDescription": "Verträge werden auf der Blockchain gespeichert und dienen der Verwaltung von Ether. Ein Vertrag kann mehrere Konten als Eigentümer haben. Verträge zeigen im Gegensatz zu Konten immer eine vollständige Transaktionshistorie.",
-            "walletsDescriptionNotEnoughFunds": "Es wird mindestens 1 Ether benötigt, um komplexe Verträge zu erstellen.",
-            "accountsDescription": "Konten können Ether, Ethereum-basierte Token oder Coins enthalten. Darüber hinaus können Konten Verträge kontrollieren. Im Gegensatz zu Wallets können Konten keine einkommenden Transaktionen anzeigen.",
+            "walletsDescription": "Verträge werden auf der Blockchain gespeichert und dienen der Verwaltung von AUX. Ein Vertrag kann mehrere Konten als Eigentümer haben. Verträge zeigen im Gegensatz zu Konten immer eine vollständige Transaktionshistorie.",
+            "walletsDescriptionNotEnoughFunds": "Es wird mindestens 1 AUX benötigt, um komplexe Verträge zu erstellen.",
+            "accountsDescription": "Konten können AUX, Ethereum-basierte Token oder Coins enthalten. Darüber hinaus können Konten Verträge kontrollieren. Im Gegensatz zu Wallets können Konten keine einkommenden Transaktionen anzeigen.",
             "buttons": {
-                "deposit": "Ether hinterlegen",
-                "depositBitcoin": "Ether mit Bitcoin hinterlegen",
+                "deposit": "AUX hinterlegen",
+                "depositBitcoin": "AUX mit Bitcoin hinterlegen",
                 "viewOnExplorer": "View on Etherscan",
                 "copyAddress": "Adresse kopieren",
                 "scanQRCode": "QR-Code anzeigen",
@@ -149,7 +149,7 @@
             },
             "error": {
                 "noDataDeployed": "Auf der Vertragsadresse wurden keine Daten veröffentlicht",
-                "outOfGas": "Die Transaktion von __from__ nach __to__ konnte nicht ausgeführt werden."  
+                "outOfGas": "Die Transaktion von __from__ nach __to__ konnte nicht ausgeführt werden."
             },
             "types": {
                 "executeContract": "Vertrag anwenden",
@@ -200,7 +200,7 @@
                     "description": "Ein Vertrag, der von mehreren Konten kontrolliert wird",
                     "text1": "Dies ist ein gemeinsames Konto von den Eigentümer",
                     "text2": "Sie können bis zu",
-                    "text3": "Ether pro Tag versenden.",
+                    "text3": "AUX pro Tag versenden.",
                     "text4": "Jede Transaktion die über das tägliche Limit hinaus geht muss durch",
                     "text5": "betätigt werden.",
                     "accountOwnersTitle": "Kontoinhaber",
@@ -243,7 +243,7 @@
             "estimatedFee": "Gebühr bestimmen",
             "createContract": "Vertrag erstellen",
             "provideGas": "Gas zur Verfügung stellen",
-            "transactionSent": "Transaktion gesendet",            
+            "transactionSent": "Transaktion gesendet",
             "error": {
                 "emptyWallet": "Das Konto, von dem Sie senden möchten, ist leer.",
                 "notEnoughFunds": "Der Betrag auf Ihrem Konto reicht nicht aus.",
@@ -262,7 +262,7 @@
                 "noCodeInRecipient": "Das Empfängerkonto ist kein Vertrag, daher kann nichts ausgeführt werden. <strong> Schreiben Sie eine Vertragsadresse in das 'AN' Feld. </strong>",
                 "addData": "Sie können einer Transaktion zusätzliche Daten übergeben. Wenn sie das \"an\" Feld leer lassen, wird versucht, ein Vertrag mit Hilfe der Daten zu erstellen.",
                 "dataNotExecutable": "Die Daten scheinen nicht ausführbar zu sein, das bedeutet, dass die Transaktion das komplette Gas aufbrauchen wird.",
-                "cantEstimateGas": "Der Gasverbrauch konnte nicht berechnet werden, da Ihr Konto mindestens einen Betrag von 1 Ether aufweisen muss.",
+                "cantEstimateGas": "Der Gasverbrauch konnte nicht berechnet werden, da Ihr Konto mindestens einen Betrag von 1 AUX aufweisen muss.",
                 "estimatedGas": "Voraussichtlich verbrauchtes Gas",
                 "timeTexts": {
                     "0": "in ein paar Minuten",
