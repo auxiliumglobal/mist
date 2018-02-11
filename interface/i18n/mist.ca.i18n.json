@@ -260,7 +260,7 @@
                 "accountTitleTestnet": "Minar una mica!",
                 "auxiliumDescription": "La xarxa d'auxilium es basa en un token anomenat “AUX”. En necessitaràs una petita quantitat per fer qualsevol cosa a la xarxa d'Auxilium.",
                 "loadItDescription": "Si ja tens Bitcoin, o qualsevol altra criptomoneda, pots canviar-la a AUX fàcilment utilitzant Shapeshift. <br><br> Et recomanem carregar entre <strong>0.25 i 1 AUX</strong>.",
-                "faucetDescription": "La xarxa de test utilitza 'Clique Proof of Authority' com a mecanisme de consens, pertant no hi ha minat. Si vols obtenir una mica d'AUX de prova, vés a la Faucet: <strong> http://faucet.sproutsplus.network </strong>",
+                "faucetDescription": "La xarxa de test utilitza 'Aepos Proof of Stake' com a mecanisme de consens, pertant no hi ha minat. Si vols obtenir una mica d'AUX de prova, vés a la Faucet: <strong> http://faucet.auxilium.global </strong>",
                 "you": "TU",
                 "auxiliumbase": "Compte principal (AUX)",
                 "depositBitcoin": "Depositar utilitzant Bitcoin",

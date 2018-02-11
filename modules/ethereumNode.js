@@ -372,7 +372,7 @@ class EthereumNode extends EventEmitter {
                     return reject(err);
                 }
                 const args = [
-                    '--sprouts.testnet',
+                    '--auxilium.testnet',
                     '--syncmode',
                     'full'
                 ];
@@ -497,7 +497,7 @@ class EthereumNode extends EventEmitter {
 
         this.defaultNodeType = Settings.nodeType || Settings.loadUserData('node') || DEFAULT_NODE_TYPE;
 //        this.defaultNetwork = Settings.network || Settings.loadUserData('network') || DEFAULT_NETWORK;
-        this.defaultNetwork = 'sprouts.testnet';
+        this.defaultNetwork = 'auxilium.testnet';
         // this.defaultSyncMode = Settings.syncmode || Settings.loadUserData('syncmode') || DEFAULT_SYNCMODE;
         this.defaultSyncMode = 'full';
 
