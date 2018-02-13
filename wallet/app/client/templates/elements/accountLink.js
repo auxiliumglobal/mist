@@ -29,7 +29,8 @@ Template['elements_account_link'].helpers({
     @method (nameDisplay)
     */
     'displayName': function(){
-        return this.ens ? this.name.split('.').slice(0, -1).reverse().join(' ▸ ') : this.name;
+        return this.ens ? this.name.split('.').slice(0, -1).reverse().join(' ▸ ') :
+            (this.name.toLowerCase().includes('etherbase') ? 'Main account (base)' : this.name);
     },
     /**
     Displays ENS names with triangles

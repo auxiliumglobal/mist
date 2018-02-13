@@ -17,7 +17,7 @@ The available units
 @property selectableUnits
 */
 selectableUnits = [{
-    text: 'ETHER',
+    text: 'AUX',
     value: 'ether'
 },
 {
@@ -53,7 +53,7 @@ if (moment().format('MM-DD')=='04-01') {
         { text: 'LOVELACE', value: 'lovelace'},
         { text: 'BABBAGE', value: 'babbage'},
         { text: 'WEI', value: 'wei'},
-        { text: 'NOETHER', value: 'noether'})
+        { text: 'NOAUX', value: 'noether'})
 
 // Claude's Birthday
 } else if (moment().format('MM-DD')=='04-30') {

@@ -42,7 +42,7 @@
 
                 <div class="col col-6 col-left">
                     <p>
-                        {{i18n "mist.popupWindows.onboarding.sproutsDescription"}}
+                        {{i18n "mist.popupWindows.onboarding.auxiliumDescription"}}
                     </p>
 
                     {{#if TemplateVar.get "testnet"}}
@@ -56,7 +56,7 @@
                     {{#if TemplateVar.get "newAccount"}}
                         {{> dapp_identicon identity=(TemplateVar.get "newAccount")}}
                         <div class="you"> {{i18n "mist.popupWindows.onboarding.you"}}  </div>
-                        <input type="text" value="{{i18n 'mist.popupWindows.onboarding.sproutsbase'}}" class="name" disabled>
+                        <input type="text" value="{{i18n 'mist.popupWindows.onboarding.auxiliumbase'}}" class="name" disabled>
                         <h6 class="address"> {{TemplateVar.get "newAccount"}} </h6>
 
                         {{#unless TemplateVar.get "testnet"}}

@@ -88,7 +88,7 @@ class Settings {
     }
 
     get appName() {
-        return this.uiMode === 'mist' ? 'Mist' : 'Auxilium Wallet';
+        return this.uiMode === 'mist' ? 'Auxilium' : 'Auxilium Wallet';
     }
 
     get appLicense() {

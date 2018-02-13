@@ -42,7 +42,7 @@ global.mode = store.getState().settings.uiMode;
 global.icon = `${__dirname}/icons/${global.mode}/icon.png`;
 global.dirname = __dirname;
 global.i18n = i18n;
-    
+
 // INTERFACE PATHS
 // - WALLET
 if (global.mode === 'wallet') {
@@ -264,7 +264,7 @@ function checkForLegacyChain() {
             message: global.i18n.t('mist.errors.legacyChain.title'),
             detail: global.i18n.t('mist.errors.legacyChain.description')
         }, () => {
-            shell.openExternal('https://github.com/ethereum/mist/releases');
+            shell.openExternal('https://github.com/applicature/sprouts-wallet/releases');
             store.dispatch(quitApp());
         });
 

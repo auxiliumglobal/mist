@@ -51,7 +51,7 @@
             </h3>
 
             {{#unless creating}}
-                {{> elements_balance balance=balance}}
+                {{> elements_balance balance=balance changeUnit=true showAllDecimals=true}}
             {{else}}
                 {{#if imported}}
                     <span class="account-balance">{{i18n "wallet.accounts.importing"}} <span>...</span></span>
@@ -60,13 +60,13 @@
                 {{/if}}
             {{/unless}}
             <!-- {{#if tokens}}
-                {{#each tokens}} 
+                {{#each tokens}}
                     {{#if formattedCoinBalance}}
                         <span class="token-balances">{{formattedCoinBalance account}}</span>
                     {{/if}}
                 {{/each}}
             {{/if}} -->
-            <span class="account-id {{#if creating}}creating{{/if}}">{{toChecksumAddress address}}</span>                
+            <span class="account-id {{#if creating}}creating{{/if}}">{{toChecksumAddress address}}</span>
         </a>
     {{/with}}
 </template>
