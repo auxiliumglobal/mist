@@ -69,8 +69,8 @@
                 "nodeMode": "Chain download",
                 "fullNode": "Store full blockchain",
                 "lightNode": "Use light Node (experimental!)",
-                "startMining": "⛏ Start mining",
-                "stopMining": "⛏ Stop mining",
+                "startMining": "⛏ Start staking",
+                "stopMining": "⛏ Stop staking",
                 "enableSwarm": "Enable Swarm"
             },
             "window": {
@@ -264,7 +264,7 @@
                 "accountTitleTestnet": "Mine some!",
                 "auxiliumDescription": "The auxilium network is based on a token called “AUX”. You’ll need a small amount of it to do anything on the Auxilium network.",
                 "loadItDescription": "If you already own Bitcoin, or any other cryptocurrency, you can easily convert it to AUX using Shapeshift. <br><br> We recommend loading somewhere between <strong>0.25 to 1 AUX</strong>.",
-                "faucetDescription": "The testnet uses Aepos as Proof of Stake as a consensus mechanism, therefore there's no mining. If you want to get some test AUX, head to the Faucet: <strong> http://faucet.auxilium.global </strong>",
+                "faucetDescription": "The testnet uses Aepos as Proof of Stake as a consensus mechanism, therefore there's no staking. If you want to get some test AUX, head to the Faucet: <strong> http://faucet.auxilium.global </strong>",
                 "you": "YOU",
                 "auxiliumbase": "Main account (AUX)",
                 "depositBitcoin": "Deposit using Bitcoin",

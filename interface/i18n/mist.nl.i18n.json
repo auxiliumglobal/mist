@@ -69,8 +69,8 @@
                 "fullNode": "Bewaar volledige blockchain",
                 "lightNode": "Gebruik light Node (experimenteel!)",
                 "mainNetwork": "Hoofdnetwerk",
-                "startMining": "⛏ Start Mining",
-                "stopMining": "⛏ Stop Mining"
+                "startMining": "⛏ Start Staking",
+                "stopMining": "⛏ Stop Staking"
             },
             "window": {
                 "label": "Scherm",
@@ -250,7 +250,7 @@
                 "accountTitleTestnet": "Mine wat!",
                 "auxiliumDescription": "Het Auxilium netwerk is gebaseerd op het “AUX” token. Je zal een kleine hoeveelheid nodig hebben om dingen op het netwerk te doen.",
                 "loadItDescription": "Als je al Bitcoins of een andere cryptocurrency hebt kan je deze makkelijk inwisselen voor AUX met Shapeshift.<br><br> Wij raden aan een hoeveelheid van tussen de <strong>0.25 en 1 AUX</strong> om te wisselen.",
-                "mineItDescription": "<strong>Op het testnetwerk kun je zelf Auxilium mijnen door te gaan naar het <em>Ontwikkelaars</em> menu en te kiezen voor <em>Begin Mining</em>. </strong> <br> <strong> PROBEER GEEN ECHTE AUXILIUM NAAR DIT ADRES TE VERSTUREN </strong>",
+                "mineItDescription": "<strong>Op het testnetwerk kun je zelf Auxilium mijnen door te gaan naar het <em>Ontwikkelaars</em> menu en te kiezen voor <em>Begin Staking</em>. </strong> <br> <strong> PROBEER GEEN ECHTE AUXILIUM NAAR DIT ADRES TE VERSTUREN </strong>",
                 "you": "Je",
                 "auxiliumbase": "Centrale account (AUX)",
                 "depositBitcoin": "Bitcoin Storten",
