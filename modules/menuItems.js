@@ -57,7 +57,8 @@ const startMining = (webviews) => {
         .then((ret) => {
             log.info('miner_start', ret.result);
 
-            if (ret.result) {
+            // TODO figure out why miner methods return null instead of true
+            if (ret.result || ret.result === null) {
                 global.mining = true;
                 createMenu(webviews);
             }
@@ -72,7 +73,7 @@ const stopMining = (webviews) => {
         .then((ret) => {
             log.info('miner_stop', ret.result);
 
-            if (ret.result) {
+            if (ret.result || ret.result === null) {
                 global.mining = false;
                 createMenu(webviews);
             }
