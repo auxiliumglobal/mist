@@ -487,6 +487,16 @@ class Windows {
                         resizable: true
                     },
                 };
+            case 'unlockAccount':
+                return {
+                    electronOptions: {
+                        width: 580,
+                        height: 550,
+                        alwaysOnTop: true,
+                        enableLargerThanScreen: false,
+                        resizable: true
+                    },
+                };
             case 'updateAvailable':
                 return {
                     useWeb3: false,
