@@ -344,7 +344,7 @@ Template['popupWindows_unlockAccount'].events({
             TemplateVar.set(template, 'unlocking', false);
             if (e) {
                 TemplateVar.set(template, 'error', 'Invalid password');
-                ipc.send('backendAction_setWindowSize', 580, template.$('.popup-windows .inner-container').height() + 240);
+                ipc.send('backendAction_setWindowSize', 580, template.$('.popup-windows .inner-container').height() + 340);
             } else if (res) {
                 ipc.send('backendAction_unlockedAccount', null, res);
             }

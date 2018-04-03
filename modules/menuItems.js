@@ -65,24 +65,23 @@ const startMining = (webviews) => {
                 log.info('Account unblocked', result);
 
                 // resolve(result);
-            }
+                modalWindow.processed = true;
+                modalWindow.close();
+                ethereumNode.send('miner_start', [1])
+                    .then((ret) => {
+                        log.info('miner_start', ret.result);
 
-            modalWindow.processed = true;
-            modalWindow.close();
+                        // TODO figure out why miner methods return null instead of true
+                        if (ret.result || ret.result === null) {
+                            global.mining = true;
+                            createMenu(webviews);
+                        }
+                    })
+                    .catch((err) => {
+                        log.error('miner_start', err);
+                    });
+            }
         }
-        ethereumNode.send('miner_start', [1])
-            .then((ret) => {
-                log.info('miner_start', ret.result);
-        
-                // TODO figure out why miner methods return null instead of true
-                if (ret.result || ret.result === null) {
-                    global.mining = true;
-                    createMenu(webviews);
-                }
-            })
-            .catch((err) => {
-                log.error('miner_start', err);
-            });
     });
 
 };
