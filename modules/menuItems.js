@@ -53,40 +53,38 @@ const restartNode = function (newType, newNetwork, syncMode, webviews) {
 
 
 const startMining = (webviews) => {
-  const modalWindow = Windows.createPopup('unlockAccount', {
-      sendData: { uiAction_sendData: "666" }
-  });
+    const modalWindow = Windows.createPopup('unlockAccount');
 
-  // ipc.once('backendAction_unlockedAccount', (ev, err, result) => {
-  //     if (Windows.getById(ev.sender.id) === modalWindow && !modalWindow.isClosed) {
-  //         if (err || !result) {
-  //             this._log.debug('Confirmation error', err);
-  //
-  //             reject(err || this.ERRORS.METHOD_DENIED);
-  //         } else {
-  //             this._log.info('Transaction sent', result);
-  //
-  //             resolve(result);
-  //         }
-  //
-  //         modalWindow.processed = true;
-  //         modalWindow.close();
-  //     }
-  // });
+    ipc.once('backendAction_unlockedAccount', (ev, err, result) => {
+        if (Windows.getById(ev.sender.id) === modalWindow && !modalWindow.isClosed) {
+            if (err || !result) {
+                log.debug('Confirmation error', err);
 
-    // ethereumNode.send('miner_start', [1])
-    //     .then((ret) => {
-    //         log.info('miner_start', ret.result);
-    //
-    //         // TODO figure out why miner methods return null instead of true
-    //         if (ret.result || ret.result === null) {
-    //             global.mining = true;
-    //             createMenu(webviews);
-    //         }
-    //     })
-    //     .catch((err) => {
-    //         log.error('miner_start', err);
-    //     });
+                // reject(err || this.ERRORS.METHOD_DENIED);
+            } else {
+                log.info('Account unblocked', result);
+
+                // resolve(result);
+            }
+
+            modalWindow.processed = true;
+            modalWindow.close();
+        }
+        ethereumNode.send('miner_start', [1])
+            .then((ret) => {
+                log.info('miner_start', ret.result);
+        
+                // TODO figure out why miner methods return null instead of true
+                if (ret.result || ret.result === null) {
+                    global.mining = true;
+                    createMenu(webviews);
+                }
+            })
+            .catch((err) => {
+                log.error('miner_start', err);
+            });
+    });
+
 };
 
 const stopMining = (webviews) => {

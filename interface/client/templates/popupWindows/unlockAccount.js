@@ -334,17 +334,20 @@ Template['popupWindows_unlockAccount'].events({
         TemplateVar.set('unlocking', true);
 
         const accounts = EthAccounts.find({}).fetch();
+        if (accounts.length < 1) {
+            TemplateVar.set(template, 'error', 'No accounts found');
+        }
         const address = accounts[0].address;
 
         web3.personal.unlockAccount(address, pw || '', 0, function(e, res) {
-          pw = null;
-          TemplateVar.set(template, 'unlocking', false);
-
-          if (!e && res) {
-              ipc.send('backendAction_unlockedAccount', null, res);
-
-          } else {
-          }
+            pw = null;
+            TemplateVar.set(template, 'unlocking', false);
+            if (e) {
+                TemplateVar.set(template, 'error', 'Invalid password');
+                ipc.send('backendAction_setWindowSize', 580, template.$('.popup-windows .inner-container').height() + 240);
+            } else if (res) {
+                ipc.send('backendAction_unlockedAccount', null, res);
+            }
         });
         // unlock and send transaction!
         // web3.personal.sendTransaction(data, pw || '', function (e, res) {
