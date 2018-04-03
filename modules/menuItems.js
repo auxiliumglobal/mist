@@ -57,22 +57,22 @@ const startMining = (webviews) => {
       sendData: { uiAction_sendData: "666" }
   });
 
-  ipc.once('backendAction_unlockedAccountAndSentTransaction', (ev, err, result) => {
-      if (Windows.getById(ev.sender.id) === modalWindow && !modalWindow.isClosed) {
-          if (err || !result) {
-              this._log.debug('Confirmation error', err);
-
-              reject(err || this.ERRORS.METHOD_DENIED);
-          } else {
-              this._log.info('Transaction sent', result);
-
-              resolve(result);
-          }
-
-          modalWindow.processed = true;
-          modalWindow.close();
-      }
-  });
+  // ipc.once('backendAction_unlockedAccount', (ev, err, result) => {
+  //     if (Windows.getById(ev.sender.id) === modalWindow && !modalWindow.isClosed) {
+  //         if (err || !result) {
+  //             this._log.debug('Confirmation error', err);
+  //
+  //             reject(err || this.ERRORS.METHOD_DENIED);
+  //         } else {
+  //             this._log.info('Transaction sent', result);
+  //
+  //             resolve(result);
+  //         }
+  //
+  //         modalWindow.processed = true;
+  //         modalWindow.close();
+  //     }
+  // });
 
     // ethereumNode.send('miner_start', [1])
     //     .then((ret) => {
