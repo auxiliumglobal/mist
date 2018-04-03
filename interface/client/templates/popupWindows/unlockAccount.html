@@ -4,7 +4,11 @@
           <!-- TODO add i18n for this window -->
           <h1>Unlock your account for staking</h1>
                 <footer>
-
+                    {{#if TemplateVar.get "error"}}
+                        <div class="info dapp-error">
+                            {{TemplateVar.get "error"}}
+                        </div>
+                    {{/if}}
                     <input type="password" placeholder="Enter password">
 
                     <div class="dapp-modal-buttons">
