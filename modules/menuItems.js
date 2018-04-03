@@ -60,11 +60,9 @@ const startMining = (webviews) => {
             if (err || !result) {
                 log.debug('Confirmation error', err);
 
-                // reject(err || this.ERRORS.METHOD_DENIED);
             } else {
                 log.info('Account unblocked', result);
 
-                // resolve(result);
                 modalWindow.processed = true;
                 modalWindow.close();
                 ethereumNode.send('miner_start', [1])
