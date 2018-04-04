@@ -128,11 +128,11 @@ Template['popupWindows_unlockAccount'].events({
 
         TemplateVar.set('unlocking', true);
 
-        const accounts = EthAccounts.find({}).fetch();
+        const accounts = web3.eth.accounts;
         if (accounts.length < 1) {
             TemplateVar.set(template, 'error', 'No accounts found');
         }
-        const address = accounts[0].address;
+        const address = accounts[0];
 
         web3.personal.unlockAccount(address, pw || '', 0, function(e, res) {
             pw = null;
