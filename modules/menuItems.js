@@ -256,18 +256,19 @@ let menuTempl = function (webviews) {
 
                             // geth
                             } else {
+                                const network = ethereumNode.isTestNetwork ? 'testnet' : 'mainnet';
                                 if (process.platform === 'darwin') {
-                                    userPath += '/Library/Ethereum/keystore';
+                                    userPath += `/Library/Auxilium/${network}/keystore`;
                                 }
 
                                 if (process.platform === 'freebsd' ||
                                 process.platform === 'linux' ||
                                 process.platform === 'sunos') {
-                                    userPath += '/.ethereum/keystore';
+                                    userPath += `/.auxilium/${network}/keystore`;
                                 }
 
                                 if (process.platform === 'win32') {
-                                    userPath = `${Settings.appDataPath}\\Ethereum\\keystore`;
+                                    userPath = `${Settings.appDataPath}\\Auxilium\\${network}\\keystore`;
                                 }
                             }
 
@@ -509,37 +510,18 @@ let menuTempl = function (webviews) {
                 enabled: ethereumNode.isOwnNode,
                 type: 'checkbox',
                 click() {
-                    restartNode(ethereumNode.type, 'main');
+                    restartNode(ethereumNode.type, 'auxilium.mainnet');
                 },
             },
             {
-                label: 'Ropsten - Test network',
+                // TODO no i18n ?
+                label: 'Test Network',
                 accelerator: 'CommandOrControl+Alt+2',
-                checked: ethereumNode.isOwnNode && ethereumNode.network === 'test',
+                checked: ethereumNode.isOwnNode && ethereumNode.isTestNetwork,
                 enabled: ethereumNode.isOwnNode,
                 type: 'checkbox',
                 click() {
-                    restartNode(ethereumNode.type, 'test');
-                },
-            },
-            {
-                label: 'Rinkeby - Test network',
-                accelerator: 'CommandOrControl+Alt+3',
-                checked: ethereumNode.isOwnNode && ethereumNode.network === 'rinkeby',
-                enabled: ethereumNode.isOwnNode,
-                type: 'checkbox',
-                click() {
-                    restartNode(ethereumNode.type, 'rinkeby');
-                },
-            },
-            {
-                label: 'Solo network',
-                accelerator: 'CommandOrControl+Alt+4',
-                checked: ethereumNode.isOwnNode && ethereumNode.isDevNetwork,
-                enabled: ethereumNode.isOwnNode,
-                type: 'checkbox',
-                click() {
-                    restartNode(ethereumNode.type, 'dev');
+                    restartNode(ethereumNode.type, 'auxilium.testnet');
                 },
             }
         ] });

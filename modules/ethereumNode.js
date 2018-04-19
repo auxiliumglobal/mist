@@ -84,15 +84,11 @@ class EthereumNode extends EventEmitter {
     }
 
     get isMainNetwork() {
-        return this.network === 'main';
+        return this.network === 'auxilium.mainnet';
     }
 
     get isTestNetwork() {
-        return this.network === 'test';
-    }
-
-    get isRinkebyNetwork() {
-        return this.network === 'rinkeby';
+        return this.network === 'auxilium.testnet';
     }
 
     get isDevNetwork() {
@@ -371,8 +367,9 @@ class EthereumNode extends EventEmitter {
 
                     return reject(err);
                 }
+                const networkArg = network === 'auxilium.mainnet' ? '--auxilium' : '--auxilium.testnet';
                 const args = [
-                    '--auxilium.testnet',
+                    networkArg,
                     '--syncmode',
                     'full'
                 ];

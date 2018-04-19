@@ -156,11 +156,11 @@ class Settings {
         ipcPath = this.userHomePath;
 
         if (process.platform === 'darwin') {
-            ipcPath += '/Library/Auxilium/testnet/geth.ipc';
+            ipcPath += '/Library/Auxilium/geth.ipc';
         } else if (process.platform === 'freebsd' ||
             process.platform === 'linux' ||
             process.platform === 'sunos') {
-            ipcPath += '/.auxilium/testnet/geth.ipc';
+            ipcPath += '/.auxilium/geth.ipc';
         } else if (process.platform === 'win32') {
             ipcPath = '\\\\.\\pipe\\geth.ipc';
         }
