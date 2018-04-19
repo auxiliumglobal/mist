@@ -514,7 +514,8 @@ let menuTempl = function (webviews) {
                 },
             },
             {
-                label: 'Test network',
+                // TODO no i18n ?
+                label: 'Test Network',
                 accelerator: 'CommandOrControl+Alt+2',
                 checked: ethereumNode.isOwnNode && ethereumNode.isTestNetwork,
                 enabled: ethereumNode.isOwnNode,
