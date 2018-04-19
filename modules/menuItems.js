@@ -509,37 +509,17 @@ let menuTempl = function (webviews) {
                 enabled: ethereumNode.isOwnNode,
                 type: 'checkbox',
                 click() {
-                    restartNode(ethereumNode.type, 'main');
+                    restartNode(ethereumNode.type, 'auxilium.mainnet');
                 },
             },
             {
-                label: 'Ropsten - Test network',
+                label: 'Test network',
                 accelerator: 'CommandOrControl+Alt+2',
-                checked: ethereumNode.isOwnNode && ethereumNode.network === 'test',
+                checked: ethereumNode.isOwnNode && ethereumNode.isTestNetwork,
                 enabled: ethereumNode.isOwnNode,
                 type: 'checkbox',
                 click() {
-                    restartNode(ethereumNode.type, 'test');
-                },
-            },
-            {
-                label: 'Rinkeby - Test network',
-                accelerator: 'CommandOrControl+Alt+3',
-                checked: ethereumNode.isOwnNode && ethereumNode.network === 'rinkeby',
-                enabled: ethereumNode.isOwnNode,
-                type: 'checkbox',
-                click() {
-                    restartNode(ethereumNode.type, 'rinkeby');
-                },
-            },
-            {
-                label: 'Solo network',
-                accelerator: 'CommandOrControl+Alt+4',
-                checked: ethereumNode.isOwnNode && ethereumNode.isDevNetwork,
-                enabled: ethereumNode.isOwnNode,
-                type: 'checkbox',
-                click() {
-                    restartNode(ethereumNode.type, 'dev');
+                    restartNode(ethereumNode.type, 'auxilium.testnet');
                 },
             }
         ] });
