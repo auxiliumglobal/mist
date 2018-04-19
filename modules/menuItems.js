@@ -256,18 +256,19 @@ let menuTempl = function (webviews) {
 
                             // geth
                             } else {
+                                const network = ethereumNode.isTestNetwork ? 'testnet' : 'mainnet';
                                 if (process.platform === 'darwin') {
-                                    userPath += '/Library/Ethereum/keystore';
+                                    userPath += `/Library/Auxilium/${network}/keystore`;
                                 }
 
                                 if (process.platform === 'freebsd' ||
                                 process.platform === 'linux' ||
                                 process.platform === 'sunos') {
-                                    userPath += '/.ethereum/keystore';
+                                    userPath += `/.auxilium/${network}/keystore`;
                                 }
 
                                 if (process.platform === 'win32') {
-                                    userPath = `${Settings.appDataPath}\\Ethereum\\keystore`;
+                                    userPath = `${Settings.appDataPath}\\Auxilium\\${network}\\keystore`;
                                 }
                             }
 
