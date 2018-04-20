@@ -156,11 +156,14 @@ class Settings {
         ipcPath = this.userHomePath;
 
         if (process.platform === 'darwin') {
-            ipcPath += '/Library/Auxilium/geth.ipc';
+            // TODO finish socket on the node
+            // ipcPath += '/Library/Auxilium/geth.ipc';
+            ipcPath += '/Library/Auxilium/testnet/geth.ipc';
         } else if (process.platform === 'freebsd' ||
             process.platform === 'linux' ||
             process.platform === 'sunos') {
-            ipcPath += '/.auxilium/geth.ipc';
+            // ipcPath += '/.auxilium/geth.ipc';
+            ipcPath += '/.auxilium/testnet/geth.ipc';
         } else if (process.platform === 'win32') {
             ipcPath = '\\\\.\\pipe\\geth.ipc';
         }
