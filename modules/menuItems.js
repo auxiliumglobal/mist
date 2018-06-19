@@ -601,7 +601,7 @@ let menuTempl = function(webviews) {
         label: i18n.t('mist.applicationMenu.develop.syncModeLight'),
         enabled:
           ethereumNode.isOwnNode &&
-          ethereumNode.isGeth &&
+          store.getState().nodes.local.client === 'geth' &&
           !ethereumNode.isDevNetwork,
         checked: store.getState().nodes.local.syncMode === 'light',
         type: 'checkbox',
@@ -631,7 +631,7 @@ let menuTempl = function(webviews) {
         label: i18n.t('mist.applicationMenu.develop.syncModeNoSync'),
         enabled:
           ethereumNode.isOwnNode &&
-          ethereumNode.isGeth &&
+          store.getState().nodes.local.client === 'geth' &&
           !ethereumNode.isDevNetwork,
         checked: store.getState().nodes.local.syncMode === 'nosync',
         type: 'checkbox',
