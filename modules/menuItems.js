@@ -83,38 +83,6 @@ const changeNodeSyncMode = function(syncMode, webviews) {
   createMenu(webviews);
 };
 
-const startMining = webviews => {
-  ethereumNode
-    .send('miner_start', [1])
-    .then(ret => {
-      log.info('miner_start', ret.result);
-
-      if (ret.result) {
-        global.mining = true;
-        createMenu(webviews);
-      }
-    })
-    .catch(err => {
-      log.error('miner_start', err);
-    });
-};
-
-const stopMining = webviews => {
-  ethereumNode
-    .send('miner_stop', [1])
-    .then(ret => {
-      log.info('miner_stop', ret.result);
-
-      if (ret.result) {
-        global.mining = false;
-        createMenu(webviews);
-      }
-    })
-    .catch(err => {
-      log.error('miner_stop', err);
-    });
-};
-
 // create a menu template
 // null -> obj
 let menuTempl = function(webviews) {
@@ -291,7 +259,7 @@ let menuTempl = function(webviews) {
                 // geth
               } else {
                 if (process.platform === 'darwin') {
-                  userPath += '/Library/Ethereum/keystore';
+                  userPath += '/Library/Auxilium/keystore';
                 }
 
                 if (
@@ -299,11 +267,11 @@ let menuTempl = function(webviews) {
                   process.platform === 'linux' ||
                   process.platform === 'sunos'
                 ) {
-                  userPath += '/.ethereum/keystore';
+                  userPath += '/.auxilium/keystore';
                 }
 
                 if (process.platform === 'win32') {
-                  userPath = `${Settings.appDataPath}\\Ethereum\\keystore`;
+                  userPath = `${Settings.appDataPath}\\Auxilium\\keystore`;
                 }
               }
 
@@ -559,26 +527,6 @@ let menuTempl = function(webviews) {
         click() {
           changeNodeNetwork('main', webviews);
         }
-      },
-      {
-        label: 'Ropsten - Test network',
-        accelerator: 'CommandOrControl+Alt+2',
-        checked: store.getState().nodes.network === 'ropsten',
-        enabled: store.getState().nodes.network !== 'private',
-        type: 'checkbox',
-        click() {
-          changeNodeNetwork('ropsten', webviews);
-        }
-      },
-      {
-        label: 'Rinkeby - Test network',
-        accelerator: 'CommandOrControl+Alt+3',
-        checked: store.getState().nodes.network === 'rinkeby',
-        enabled: store.getState().nodes.network !== 'private',
-        type: 'checkbox',
-        click() {
-          changeNodeNetwork('rinkeby', webviews);
-        }
       }
       // {
       //   label: 'Solo network',
@@ -642,32 +590,6 @@ let menuTempl = function(webviews) {
     ]
   });
 
-  // Enables mining menu: only in Solo mode and Ropsten network (testnet)
-  if (
-    ethereumNode.isOwnNode &&
-    (ethereumNode.isTestNetwork || ethereumNode.isDevNetwork)
-  ) {
-    devToolsMenu.push(
-      {
-        type: 'separator'
-      },
-      {
-        label: global.mining
-          ? i18n.t('mist.applicationMenu.develop.stopMining')
-          : i18n.t('mist.applicationMenu.develop.startMining'),
-        accelerator: 'CommandOrControl+Shift+M',
-        enabled: true,
-        click() {
-          if (global.mining) {
-            stopMining(webviews);
-          } else {
-            startMining(webviews);
-          }
-        }
-      }
-    );
-  }
-
   if (global.mode !== 'wallet') {
     devToolsMenu.push(
       {
@@ -686,13 +608,6 @@ let menuTempl = function(webviews) {
       }
     );
   }
-
-  menu.push({
-    label:
-      (global.mining ? '⛏ ' : '') +
-      i18n.t('mist.applicationMenu.develop.label'),
-    submenu: devToolsMenu
-  });
 
   // WINDOW
   menu.push({
@@ -746,22 +661,22 @@ let menuTempl = function(webviews) {
     );
   }
   helpMenu.push(
-    {
-      label: i18n.t('mist.applicationMenu.help.mistWiki'),
-      click() {
-        shell.openExternal('https://github.com/ethereum/mist/wiki');
-      }
-    },
-    {
-      label: i18n.t('mist.applicationMenu.help.gitter'),
-      click() {
-        shell.openExternal('https://gitter.im/ethereum/mist');
-      }
-    },
+    // {
+    //   label: i18n.t('mist.applicationMenu.help.mistWiki'),
+    //   click() {
+    //     shell.openExternal('https://github.com/ethereum/mist/wiki');
+    //   }
+    // },
+    // {
+    //   label: i18n.t('mist.applicationMenu.help.gitter'),
+    //   click() {
+    //     shell.openExternal('https://gitter.im/ethereum/mist');
+    //   }
+    // },
     {
       label: i18n.t('mist.applicationMenu.help.reportBug'),
       click() {
-        shell.openExternal('https://github.com/ethereum/mist/issues');
+        shell.openExternal('https://github.com/auxiliumglobal/mist/issues');
       }
     }
   );

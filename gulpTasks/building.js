@@ -12,7 +12,7 @@ const shell = require('shelljs');
 const version = require('../package.json').version;
 
 const type = options.type;
-const applicationName = options.wallet ? 'Ethereum Wallet' : 'Mist';
+const applicationName = options.wallet ? 'Auxilium Wallet' : 'Auxilium';
 
 gulp.task('clean-dist', cb => {
   return del([`./dist_${type}`, './meteor-dapp-wallet'], cb);
@@ -79,7 +79,7 @@ gulp.task('pack-wallet', cb => {
     del(['./wallet', './meteor-dapp-wallet']).then(() => {
       console.log('Building wallet...');
       exec(
-        `git clone --depth 1 https://github.com/ethereum/meteor-dapp-wallet.git && \
+        `git clone --depth 1 https://github.com/auxiliumglobal/meteor-dapp-wallet.git && \
             cd meteor-dapp-wallet/app && \
             npm install && \
             ../../node_modules/.bin/meteor-build-client ../../wallet -p ""`,
@@ -114,15 +114,15 @@ gulp.task('bundling-interface', cb => {
       console.log('Use local wallet at ../meteor-dapp-wallet/app');
       bundle(`&& cd ../../meteor-dapp-wallet/app \
               && npm install \
-              && ../../../node_modules/.bin/meteor-build-client ../../mist/dist_${type}/app/interface/wallet -p ""`);
+              && meteor-build-client ../../mist/dist_${type}/app/interface/wallet -p ""`);
     } else {
       console.log(
-        `Pulling https://github.com/ethereum/meteor-dapp-wallet/tree/${
+        `Pulling https://github.com/auxiliumglobal/meteor-dapp-wallet/tree/${
           options.walletSource
         } "${options.walletSource}" branch...`
       );
       bundle(`&& cd ../dist_${type} \
-                && git clone --depth 1 https://github.com/ethereum/meteor-dapp-wallet.git \
+                && git clone --depth 1 https://github.com/auxiliumglobal/meteor-dapp-wallet.git \
                 && cd meteor-dapp-wallet/app \
                 && npm install \
                 && ../../../node_modules/.bin/meteor-build-client ../../app/interface/wallet -p "" \
@@ -148,7 +148,7 @@ gulp.task('build-dist', cb => {
     name: applicationName.replace(/\s/, ''),
     productName: applicationName,
     description: applicationName,
-    homepage: 'https://github.com/ethereum/mist',
+    homepage: 'https://github.com/auxiliumglobal/mist',
     build: {
       appId: `org.ethereum.${type}`,
       asar: true,

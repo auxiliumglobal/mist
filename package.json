@@ -1,11 +1,11 @@
 {
-  "name": "Mist",
-  "version": "0.11.0-rc",
+  "name": "Auxilium",
+  "version": "0.1.0",
   "license": "GPL-3.0",
-  "author": "Ethereum Mist Team <mist@ethereum.org>",
+  "author": "Auxilium Team <wallet@auxilium.global>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ethereum/mist.git"
+    "url": "https://github.com/auxiliumglobal/mist.git"
   },
   "scripts": {
     "precommit": "pretty-quick --staged",

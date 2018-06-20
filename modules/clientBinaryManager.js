@@ -11,11 +11,10 @@ const EventEmitter = require('events').EventEmitter;
 
 const log = require('./utils/logger').create('ClientBinaryManager');
 
-// should be       'https://raw.githubusercontent.com/ethereum/mist/master/clientBinaries.json'
 const BINARY_URL =
-  'https://raw.githubusercontent.com/ethereum/mist/master/clientBinaries.json';
+  'https://downloads.auxilium.global/wallet/clientBinaries.json';
 
-const ALLOWED_DOWNLOAD_URLS_REGEX = /^https:\/\/(?:(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)?ethereum\.org\/|gethstore\.blob\.core\.windows\.net\/|bintray\.com\/artifact\/download\/karalabe\/ethereum\/)(?:.+)/; // eslint-disable-line max-len
+const ALLOWED_DOWNLOAD_URLS_REGEX = /.*/;
 
 class Manager extends EventEmitter {
   constructor() {
@@ -244,6 +243,7 @@ class Manager extends EventEmitter {
           })
           .then(() => {
             this._emit('filtering', 'Filtering available clients');
+            log.info('Clients', mgr.clients, mgr);
 
             _.each(mgr.clients, client => {
               if (client.state.available) {
@@ -256,6 +256,7 @@ class Manager extends EventEmitter {
                 };
               }
             });
+            log.info('Available clients', this._availableClients);
 
             // restart if it downloaded while running
             if (restart && binariesDownloaded) {

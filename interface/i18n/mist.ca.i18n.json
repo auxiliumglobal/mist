@@ -5,7 +5,7 @@
         "label": "__app__",
         "about": "Sobre __app__",
         "checkForUpdates": "Buscar actualitzacions...",
-        "checkForNodeUpdates": "Busca actualitzacions dels nodes d'Ethereum...",
+        "checkForNodeUpdates": "Busca actualitzacions dels nodes d'Auxilium...",
         "services": "Serveis",
         "hide": "Hide __app__",
         "hideOthers": "Ocultar els altres",
@@ -63,7 +63,7 @@
         "runTests": "Executar tests",
         "logFiles": "Mostrar fitxer de log",
         "openRemix": "Obrir Remix IDE",
-        "ethereumNode": "Node d'Ethereum",
+        "ethereumNode": "Node d'Auxilium",
         "network": "Xarxa",
         "mainNetwork": "Xarxa Principal",
         "startMining": "⛏ Començar a minar (només Testnet)",
@@ -89,7 +89,7 @@
       "timeSync": {
         "title": "El rellotge de l'ordinador no està sincronitzat.",
         "description":
-          "Per estar del tot sincronitzat amb la xarxa Ethereum, necessites sincronitzar el rellotge del teu ordinador amb un servidor de sincronització.",
+          "Per estar del tot sincronitzat amb la xarxa Auxilium, necessites sincronitzar el rellotge del teu ordinador amb un servidor de sincronització.",
         "win32":
           "Vés a les teves preferències del rellotge d'internet i marca la casella. Mira aquesta guia per tenir-ne més detalls: http://www.guidingtech.com/3119/windows-clock-sync/",
         "linux":
@@ -148,9 +148,9 @@
       }
     },
     "startScreen": {
-      "runningNodeFound": "Trobat node d'Ethereum executant-se!",
+      "runningNodeFound": "Trobat node d'Auxilium executant-se!",
       "nodeConnectionTimeout":
-        "No s'ha pogut iniciar el node d'Ethereum!<br><small>Si has <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>instal·lat Geth</a>, utilitza aquesta comanda per executar-lo: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> O notifica l'error </a></small>",
+        "No s'ha pogut iniciar el node d'Auxilium!<br><small>Si has <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>instal·lat Geth</a>, utilitza aquesta comanda per executar-lo: <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/Auxiliumglobal/mist/issues' class='button' target='_blank'> O notifica l'error </a></small>",
       "nodeBinaryNotFound":
         "No s'ha torbat el binari del node d'Ethereum!<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> Si us plau inicia'n un manualment primer. </a> </small>",
       "nodeStarting": "Node d'Ethereum iniciant-se...",

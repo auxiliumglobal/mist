@@ -1,0 +1,23 @@
+<template name="popupWindows_unlockAccount">
+    <div class="popup-windows tx-info">
+        <form action="#">
+          <!-- TODO add i18n for this window -->
+          <h1>Unlock your account for staking</h1>
+                <footer>
+                    {{#if TemplateVar.get "error"}}
+                        <div class="info dapp-error">
+                            {{TemplateVar.get "error"}}
+                        </div>
+                    {{/if}}
+                    <input type="password" placeholder="Enter password">
+
+                    <div class="dapp-modal-buttons">
+                        <button class="cancel" type="button">{{i18n "buttons.cancel"}}</button>
+                        <button class="ok dapp-primary-button" type="submit">Unlock account</button>
+                    </div>
+
+                </footer>
+
+        </form>
+    </div>
+</template>

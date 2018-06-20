@@ -21,7 +21,7 @@ const ethereumNodeLog = logger.create('EthereumNode');
 
 const DEFAULT_NODE_TYPE = 'geth';
 const DEFAULT_NETWORK = 'main';
-const DEFAULT_SYNCMODE = 'light';
+const DEFAULT_SYNCMODE = 'full';
 
 const UNABLE_TO_BIND_PORT_ERROR = 'unableToBindPort';
 const NODE_START_WAIT_MS = 3000;
@@ -100,7 +100,7 @@ class EthereumNode extends EventEmitter {
   }
 
   get isTestNetwork() {
-    return this.network === 'test' || this.network === 'ropsten';
+    return this.network === 'test';
   }
 
   get isRinkebyNetwork() {
@@ -385,6 +385,7 @@ class EthereumNode extends EventEmitter {
 
     const client = ClientBinaryManager.getClient(nodeType);
     let binPath;
+    console.log('__startNode', client);
 
     if (client) {
       binPath = client.binPath;
@@ -444,28 +445,9 @@ class EthereumNode extends EventEmitter {
       let args;
 
       switch (network) {
-        // Starts Ropsten network
-        case 'ropsten':
-        // fall through
         case 'test':
           args = [
             '--testnet',
-            '--cache',
-            process.arch === 'x64' ? '1024' : '512',
-            '--ipcpath',
-            Settings.rpcIpcPath
-          ];
-          if (syncMode === 'nosync') {
-            args.push('--nodiscover', '--maxpeers=0');
-          } else {
-            args.push('--syncmode', syncMode);
-          }
-          break;
-
-        // Starts Rinkeby network
-        case 'rinkeby':
-          args = [
-            '--rinkeby',
             '--cache',
             process.arch === 'x64' ? '1024' : '512',
             '--ipcpath',
@@ -500,6 +482,8 @@ class EthereumNode extends EventEmitter {
           } else {
             args.push('--syncmode', syncMode);
           }
+          // args.push('--verbosity', 4);
+          console.log(args);
       }
 
       const nodeOptions = Settings.nodeOptions;
@@ -708,14 +692,14 @@ class EthereumNode extends EventEmitter {
     const blockResult = await this.send('eth_getBlockByNumber', ['0x0', false]);
     const block = blockResult.result;
     switch (block.hash) {
-      case '0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3':
-        return 'main';
-      case '0x6341fd3daf94b748c72ced5a5b26028f2474f5f00d824504e4fa37a75767e177':
-        return 'rinkeby';
-      case '0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d':
-        return 'ropsten';
-      case '0xa3c565fc15c7478862d50ccd6561e3c06b24cc509bf388941c25ea985ce32cb9':
-        return 'kovan';
+      // case '0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3':
+      //   return 'main';
+      // case '0x6341fd3daf94b748c72ced5a5b26028f2474f5f00d824504e4fa37a75767e177':
+      //   return 'rinkeby';
+      // case '0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d':
+      //   return 'ropsten';
+      // case '0xa3c565fc15c7478862d50ccd6561e3c06b24cc509bf388941c25ea985ce32cb9':
+      //   return 'kovan';
       default:
         return 'private';
     }
