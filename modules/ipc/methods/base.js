@@ -51,7 +51,7 @@ module.exports = class BaseProcessor {
   async _handleArrayExec(payload, conn) {
     // If on local node, send batch transaction.
     // Otherwise, iterate through the batch to send over remote node since infura does not have batch support yet.
-    const isRemote = false; //store.getState().nodes.active === 'remote';
+    const isRemote = store.getState().nodes.active === 'remote';
     if (!isRemote) {
       this._log.trace(
         `Sending batch request to local node: ${payload
@@ -103,7 +103,7 @@ module.exports = class BaseProcessor {
   _shouldSendToRemote(payload, conn) {
     // Do NOT send to the remote node if: (all conditions must be satisfied)
     // 1. the local node is synced
-    const isRemote = false; // store.getState().nodes.active === 'remote';
+    const isRemote = store.getState().nodes.active === 'remote';
     if (!isRemote) {
       return false;
     }
