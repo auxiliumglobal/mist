@@ -14,7 +14,9 @@ const check = (exports.check = () => {
 
   let str = null;
 
-  switch (Settings.uiMode) { // eslint-disable-line default-case
+  switch (
+    Settings.uiMode // eslint-disable-line default-case
+  ) {
     case 'mist':
       str = 'mist';
       break;
@@ -23,10 +25,13 @@ const check = (exports.check = () => {
       break;
   }
 
-  return got('https://api.github.com/repos/ethereum/mist/releases/latest', {
-    timeout: 30000,
-    json: true
-  })
+  return got(
+    'https://api.github.com/repos/auxiliumglobal/mist/releases/latest',
+    {
+      timeout: 30000,
+      json: true
+    }
+  )
     .then(res => {
       const release = res.body;
 
