@@ -170,9 +170,9 @@ function onReady() {
 
   enableSwarmProtocol();
 
-  // if (!Settings.inAutoTestMode) {
-  //   UpdateChecker.run();
-  // }
+  if (!Settings.inAutoTestMode) {
+    UpdateChecker.run();
+  }
 
   ipcProviderBackend.init();
 
@@ -193,7 +193,7 @@ function onReady() {
 
   checkForLegacyChain();
 
-  ClientBinaryManager.init(true);
+  ClientBinaryManager.init();
 
   if (Settings.enableSwarmOnStart) {
     store.dispatch(toggleSwarm());
