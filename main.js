@@ -193,7 +193,7 @@ function onReady() {
 
   checkForLegacyChain();
 
-  ClientBinaryManager.init();
+  ClientBinaryManager.init(true);
 
   if (Settings.enableSwarmOnStart) {
     store.dispatch(toggleSwarm());
