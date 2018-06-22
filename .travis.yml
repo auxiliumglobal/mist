@@ -12,6 +12,7 @@ branches:
   only:
     - develop
     - master
+    - aux-fresh-2
     - /^greenkeeper/.*$/
 
 matrix:
@@ -89,7 +90,7 @@ script:
   # - gulp verify-artifacts --mist --$GULP_PLATFORM
 
   # build wallet if on master branch
-  - if [[ $TRAVIS_BRANCH == "develop" ]]; then travis_wait 60 gulp --wallet --$GULP_PLATFORM; fi
+  - if [[ $TRAVIS_BRANCH == "aux-fresh-2" ]]; then travis_wait 60 gulp --wallet --$GULP_PLATFORM; fi
 
   # assert creation of Wallet artifacts
   - if [[ $TRAVIS_BRANCH == "master" ]]; then gulp verify-artifacts --wallet --$GULP_PLATFORM; fi
@@ -101,7 +102,7 @@ script:
   - if [[ $GULP_PLATFORM != "win" ]]; then gulp test; fi
 
 after_success:
-  - if [[ $TRAVIS_BRANCH == "develop" ]]; then gulp upload-queue --wallet --$GULP_PLATFORM; fi
+  - if [[ $TRAVIS_BRANCH == "aux-fresh-2" ]]; then gulp upload-queue --wallet --$GULP_PLATFORM; fi
 
 
 # notifications:
