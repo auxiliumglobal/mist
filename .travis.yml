@@ -70,26 +70,27 @@ install:
   - export PATH=$PATH:`yarn global bin`
   - yarn global add gulp-cli meteor-build-client electron@1.8.4
   - yarn
+  - which gulp
 
 script:
   # disable macOS code-signing (production certificate) on develop branch
-  - if [[ $TRAVIS_BRANCH != "master" ]]; then unset CSC_LINK CSC_KEY_PASSWORD; fi
+  # - if [[ $TRAVIS_BRANCH != "master" ]]; then unset CSC_LINK CSC_KEY_PASSWORD; fi
   # windows code-signing on master branch
   - if [[ $GULP_PLATFORM == "win" && $TRAVIS_BRANCH == "master" ]]; then export CSC_LINK=$CSC_WIN_LINK && CSC_KEY_PASSWORD=$CSC_WIN_KEY_PASSWORD; fi
 
   # unit test
-  - if [[ $GULP_PLATFORM == "linux" ]]; then yarn test:unit:once; fi
-    
+  # - if [[ $GULP_PLATFORM == "linux" ]]; then yarn test:unit:once; fi
+
   # build mist
-  - if [[ $GULP_PLATFORM == "mac" ]]; then travis_wait 60 gulp --$GULP_PLATFORM; fi  # increase timeout for slower mac builds
-  - if [[ $GULP_PLATFORM != "mac" ]]; then gulp --$GULP_PLATFORM; fi
+  # - if [[ $GULP_PLATFORM == "mac" ]]; then travis_wait 60 gulp --$GULP_PLATFORM; fi  # increase timeout for slower mac builds
+  # - if [[ $GULP_PLATFORM != "mac" ]]; then gulp --$GULP_PLATFORM; fi
 
   # assert creation of Mist artifacts
-  - gulp verify-artifacts --mist --$GULP_PLATFORM
- 
+  # - gulp verify-artifacts --mist --$GULP_PLATFORM
+
   # build wallet if on master branch
-  - if [[ $TRAVIS_BRANCH == "master" ]]; then travis_wait 60 gulp --wallet --$GULP_PLATFORM; fi
-  
+  - if [[ $TRAVIS_BRANCH == "develop" ]]; then travis_wait 60 gulp --wallet --$GULP_PLATFORM; fi
+
   # assert creation of Wallet artifacts
   - if [[ $TRAVIS_BRANCH == "master" ]]; then gulp verify-artifacts --wallet --$GULP_PLATFORM; fi
 
@@ -100,13 +101,13 @@ script:
   - if [[ $GULP_PLATFORM != "win" ]]; then gulp test; fi
 
 after_success:
-  - if [[ $TRAVIS_BRANCH == "master" ]]; then gulp upload-queue --$GULP_PLATFORM && gulp upload-queue --wallet --$GULP_PLATFORM; fi
+  - if [[ $TRAVIS_BRANCH == "develop" ]]; then gulp upload-queue --wallet --$GULP_PLATFORM; fi
 
 
-notifications:
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/33972d9e627a142c57a6
-    on_success: change
-    on_failure: always
-    on_start: never
+# notifications:
+#   webhooks:
+#     urls:
+#       - https://webhooks.gitter.im/e/33972d9e627a142c57a6
+#     on_success: change
+#     on_failure: always
+#     on_start: never
