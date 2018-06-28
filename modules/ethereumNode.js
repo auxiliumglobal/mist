@@ -173,20 +173,26 @@ class EthereumNode extends EventEmitter {
         ethereumNodeLog.warn(
           'Failed to connect to an existing local node. Starting our own...'
         );
-
-        ethereumNodeLog.info(`Node type: ${this.defaultNodeType}`);
-        ethereumNodeLog.info(`Network: ${this.defaultNetwork}`);
-        ethereumNodeLog.info(`SyncMode: ${this.defaultSyncMode}`);
-
-        return this._start(
-          this.defaultNodeType,
-          this.defaultNetwork,
-          this.defaultSyncMode
-        ).catch(err => {
-          ethereumNodeLog.error('Failed to start node', err);
-          throw err;
-        });
+        var node = this;
+        setTimeout(function() {
+          node.startLocalNode();
+        }, 20000);
       });
+  }
+
+  startLocalNode() {
+    ethereumNodeLog.info(`Node type: ${this.defaultNodeType}`);
+    ethereumNodeLog.info(`Network: ${this.defaultNetwork}`);
+    ethereumNodeLog.info(`SyncMode: ${this.defaultSyncMode}`);
+
+    return this._start(
+      this.defaultNodeType,
+      this.defaultNetwork,
+      this.defaultSyncMode
+    ).catch(err => {
+      ethereumNodeLog.error('Failed to start node', err);
+      throw err;
+    });
   }
 
   restart(newType, newNetwork, syncMode) {

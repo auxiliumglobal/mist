@@ -1,11 +1,11 @@
 export const InfuraEndpoints = {
   ethereum: {
     http: {
-      Main: 'http://45.32.186.109:8545' //'https://mainnet.infura.io/mist',
+      Main: 'http://node4.auxilium.global:8545' //'https://mainnet.infura.io/mist',
       // Ropsten: 'https://ropsten.infura.io/mist',
     },
     websockets: {
-      Main: 'ws://45.32.186.109:8546' //'wss://mainnet.infura.io/ws',
+      Main: 'ws://node4.auxilium.global:8546/ws' //'wss://mainnet.infura.io/ws',
       // Ropsten: 'wss://ropsten.infura.io/ws',
     }
   },
