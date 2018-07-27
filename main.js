@@ -4,7 +4,6 @@ const { app, dialog, ipcMain, shell, protocol } = require('electron');
 const Q = require('bluebird');
 const windowStateKeeper = require('electron-window-state');
 const timesync = require('os-timesync');
-
 const dbSync = require('./modules/dbSync.js');
 const i18n = require('./modules/i18n.js');
 const Sockets = require('./modules/socketManager');
